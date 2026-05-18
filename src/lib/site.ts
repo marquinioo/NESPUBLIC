@@ -14,6 +14,8 @@ export const ROUTES = {
   stories: "/historias",
   app: "/app",
   contact: "/contacto",
+  terms: "/terminos",
+  privacy: "/privacidad",
 } as const;
 
 export type SolutionId =
@@ -128,6 +130,11 @@ export const FOOTER_COMPANY_LINKS = [
   { key: "sustainability", href: ROUTES.sustainability },
   { key: "stories", href: ROUTES.stories },
   { key: "contact", href: ROUTES.contact },
+] as const;
+
+export const FOOTER_POLICY_LINKS = [
+  { key: "terms", href: ROUTES.terms },
+  { key: "privacy", href: ROUTES.privacy },
 ] as const;
 
 export const HOME_STATS = [

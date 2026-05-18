@@ -11,6 +11,7 @@ import { Section } from "@/components/ui/Section";
 import { Container } from "@/components/ui/Container";
 import { PhoneMockup } from "@/components/ui/PhoneMockup";
 import { AnimateOnView } from "@/components/ui/AnimateOnView";
+import { ChargingMap } from "./ChargingMap";
 
 const FEATURE_ICONS: Record<(typeof APP_FEATURES)[number], LucideIcon> = {
   f1: MapPin,
@@ -98,36 +99,7 @@ export async function AppPage() {
             <p className="mt-4 max-w-2xl text-lg text-text-muted">{map("desc")}</p>
           </AnimateOnView>
           <AnimateOnView className="mt-10">
-            <div
-              className="relative aspect-[16/7] overflow-hidden rounded-2xl border border-border bg-bg-primary"
-              role="img"
-              aria-label={map("h2")}
-            >
-              <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(34,197,94,0.15),transparent_70%)]" />
-              <div
-                className="absolute inset-0 opacity-40"
-                style={{
-                  backgroundImage: `radial-gradient(circle, rgba(34,197,94,0.5) 2px, transparent 2px)`,
-                  backgroundSize: "24px 24px",
-                }}
-              />
-              {[
-                { top: "35%", left: "45%" },
-                { top: "50%", left: "55%" },
-                { top: "40%", left: "30%" },
-                { top: "60%", left: "65%" },
-                { top: "25%", left: "60%" },
-              ].map((pos, i) => (
-                <div
-                  key={i}
-                  className="absolute h-4 w-4 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-white bg-accent-green shadow-lg shadow-accent-green/50"
-                  style={pos}
-                />
-              ))}
-              <div className="absolute bottom-4 left-4 rounded-lg bg-bg-surface/90 px-3 py-2 text-xs font-medium backdrop-blur">
-                Montevideo · Uruguay
-              </div>
-            </div>
+            <ChargingMap />
           </AnimateOnView>
         </Container>
       </section>

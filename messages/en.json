@@ -13,6 +13,7 @@
     "col2Title": "Solutions",
     "col3Title": "Company",
     "col4Title": "App & Contact",
+    "col5Title": "Policies",
     "copyright": "© 2025 NES — New Energy Solutions. All rights reserved.",
     "partners": "Our technology partners"
   },
@@ -333,7 +334,8 @@
     },
     "map": {
       "h2": "Uruguay's electric charging network.",
-      "desc": "NES operates an expanding charging network — available in Montevideo and other cities across the country. All integrated into the NES Charge App."
+      "desc": "NES operates an expanding charging network — available in Montevideo and other cities across the country. All integrated into the NES Charge App.",
+      "iframeTitle": "NES charging points map in Montevideo, Uruguay"
     }
   },
   "about": {
@@ -465,6 +467,10 @@
         "p2": "The company continues expanding its footprint with global partnerships and a Uruguayan technical team that supports every project from start to finish."
       }
     }
+  },
+  "legal": {
+    "terms": "Terms and Conditions",
+    "privacy": "Privacy Policy"
   },
   "mascot": {
     "bubble": "Where do we start?",

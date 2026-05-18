@@ -13,6 +13,7 @@
     "col2Title": "解决方案",
     "col3Title": "公司",
     "col4Title": "应用与联系",
+    "col5Title": "政策",
     "copyright": "© 2025 NES — New Energy Solutions. 保留所有权利。",
     "partners": "我们的技术合作伙伴"
   },
@@ -333,7 +334,8 @@
     },
     "map": {
       "h2": "乌拉圭电动汽车充电网络。",
-      "desc": "NES 运营不断扩展的充电网络——覆盖蒙得维的亚及全国其他城市，全部集成于 NES Charge 应用。"
+      "desc": "NES 运营不断扩展的充电网络——覆盖蒙得维的亚及全国其他城市，全部集成于 NES Charge 应用。",
+      "iframeTitle": "乌拉圭蒙得维的亚 NES 充电点地图"
     }
   },
   "about": {
@@ -465,6 +467,10 @@
         "p2": "公司继续凭借全球合作伙伴关系和乌拉圭技术团队扩大足迹，全程支持每个项目。"
       }
     }
+  },
+  "legal": {
+    "terms": "使用条款和条件",
+    "privacy": "隐私政策"
   },
   "mascot": {
     "bubble": "从哪里开始？",

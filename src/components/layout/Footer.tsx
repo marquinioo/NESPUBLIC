@@ -3,6 +3,7 @@ import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import {
   FOOTER_COMPANY_LINKS,
+  FOOTER_POLICY_LINKS,
   FOOTER_SOLUTION_LINKS,
   ROUTES,
   SITE,
@@ -14,11 +15,12 @@ export async function Footer() {
   const t = await getTranslations("footer");
   const nav = await getTranslations("nav");
   const menu = await getTranslations("menu");
+  const legal = await getTranslations("legal");
 
   return (
     <footer className="border-t border-border bg-bg-primary">
       <div className="mx-auto max-w-content px-6 py-16 md:px-12">
-        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-5">
           <div>
             <Image
               src="/images/logo-white.png"
@@ -99,6 +101,24 @@ export async function Footer() {
                   {SITE.domain}
                 </a>
               </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="text-sm font-semibold uppercase tracking-wider text-text-primary">
+              {t("col5Title")}
+            </h3>
+            <ul className="mt-4 space-y-2">
+              {FOOTER_POLICY_LINKS.map((item) => (
+                <li key={item.key}>
+                  <Link
+                    href={item.href}
+                    className="text-sm text-text-muted transition-colors hover:text-accent-green"
+                  >
+                    {legal(item.key)}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
