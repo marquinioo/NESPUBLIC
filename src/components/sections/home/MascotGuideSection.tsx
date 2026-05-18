@@ -42,16 +42,15 @@ export function MascotGuideSection() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className={`relative mx-auto w-full max-w-[320px] md:max-w-[480px] lg:max-w-none ${reduceMotion ? "" : "animate-mascot-idle"}`}
-              style={{
-                filter: "drop-shadow(0 0 40px rgba(34,197,94,0.3))",
-              }}
+              className={`relative mx-auto w-full max-w-[360px] md:max-w-[520px] lg:max-w-none ${reduceMotion ? "" : "animate-mascot-idle"}`}
             >
               <Image
                 src={MASCOT_IMAGES[locale]}
                 alt="Voltio — NES mascot"
                 width={1024}
-                height={351}
+                height={1024}
+                sizes="(max-width: 768px) 360px, (max-width: 1024px) 520px, 560px"
+                quality={95}
                 className="h-auto w-full object-contain"
                 priority={false}
               />

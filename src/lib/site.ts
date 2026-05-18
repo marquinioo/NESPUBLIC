@@ -137,6 +137,19 @@ export const FOOTER_POLICY_LINKS = [
   { key: "privacy", href: ROUTES.privacy },
 ] as const;
 
+export const FOOTER_SOCIAL_LINKS = [
+  {
+    id: "linkedin",
+    href: "https://www.linkedin.com/company/nesuy/",
+    label: "LinkedIn",
+  },
+  {
+    id: "instagram",
+    href: "https://www.instagram.com/newenergysolutions.uy/",
+    label: "Instagram",
+  },
+] as const;
+
 export const HOME_STATS = [
   { key: "s1", value: "+10" },
   { key: "s2", value: "+3 MW" },

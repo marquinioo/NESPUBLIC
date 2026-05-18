@@ -10,6 +10,7 @@ import {
   solutionHref,
 } from "@/lib/site";
 import { GradientDivider } from "@/components/ui/GradientDivider";
+import { FooterSocialLinks } from "./FooterSocialLinks";
 
 export async function Footer() {
   const t = await getTranslations("footer");
@@ -68,6 +69,7 @@ export async function Footer() {
                 </li>
               ))}
             </ul>
+            <FooterSocialLinks />
           </div>
 
           <div>
