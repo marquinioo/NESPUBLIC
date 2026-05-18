@@ -1,7 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
+import type { Locale } from "@/i18n/routing";
 import { motion, useReducedMotion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { Link } from "@/i18n/navigation";
@@ -9,7 +10,14 @@ import { MASCOT_LINKS } from "@/lib/site";
 import { Container } from "@/components/ui/Container";
 import { AnimateOnView } from "@/components/ui/AnimateOnView";
 
+const MASCOT_IMAGES: Record<Locale, string> = {
+  es: "/images/mascot-es.png",
+  en: "/images/mascot-en.png",
+  zh: "/images/mascot-zh.png",
+};
+
 export function MascotGuideSection() {
+  const locale = useLocale() as Locale;
   const t = useTranslations("mascot");
   const reduceMotion = useReducedMotion();
 
@@ -34,16 +42,16 @@ export function MascotGuideSection() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className={`relative mx-auto w-full max-w-[280px] md:max-w-[420px] lg:max-w-none ${reduceMotion ? "" : "animate-mascot-idle"}`}
+              className={`relative mx-auto w-full max-w-[320px] md:max-w-[480px] lg:max-w-none ${reduceMotion ? "" : "animate-mascot-idle"}`}
               style={{
                 filter: "drop-shadow(0 0 40px rgba(34,197,94,0.3))",
               }}
             >
               <Image
-                src="/images/mascot.png"
-                alt=""
-                width={500}
-                height={500}
+                src={MASCOT_IMAGES[locale]}
+                alt="Voltio — NES mascot"
+                width={1024}
+                height={351}
                 className="h-auto w-full object-contain"
                 priority={false}
               />

@@ -28,7 +28,7 @@ export function LanguageToggle() {
           type="button"
           onClick={() => router.replace(pathname, { locale: loc })}
           className={cn(
-            "rounded-full px-2.5 py-1 text-xs font-medium transition-colors md:px-3",
+            "rounded-full px-2 py-1 text-[11px] font-medium transition-colors sm:px-2.5 sm:text-xs md:px-3",
             locale === loc
               ? "bg-accent-green text-black"
               : "text-text-muted hover:text-text-primary",

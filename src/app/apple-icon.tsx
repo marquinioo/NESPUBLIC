@@ -3,6 +3,8 @@ import { ImageResponse } from "next/og";
 export const size = { width: 180, height: 180 };
 export const contentType = "image/png";
 
+const BRAND_ORANGE = "#F97316";
+
 export default function AppleIcon() {
   return new ImageResponse(
     (
@@ -27,34 +29,34 @@ export default function AppleIcon() {
         >
           <div
             style={{
-              width: 48,
-              height: 28,
-              background: "#22C55E",
-              transform: "skewX(-12deg)",
+              width: 52,
+              height: 30,
+              background: BRAND_ORANGE,
+              transform: "skewX(-14deg)",
             }}
           />
           <div style={{ display: "flex", flexDirection: "column", gap: 5 }}>
             <div
               style={{
-                width: 42,
+                width: 46,
                 height: 8,
-                background: "#22C55E",
+                background: BRAND_ORANGE,
                 borderRadius: 4,
               }}
             />
             <div
               style={{
-                width: 32,
+                width: 34,
                 height: 8,
-                background: "#22C55E",
+                background: BRAND_ORANGE,
                 borderRadius: 4,
               }}
             />
             <div
               style={{
-                width: 22,
+                width: 24,
                 height: 8,
-                background: "#22C55E",
+                background: BRAND_ORANGE,
                 borderRadius: 4,
               }}
             />

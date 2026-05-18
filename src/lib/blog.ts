@@ -18,10 +18,15 @@ export type BlogPostMeta = {
 
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
+    slug: "omnibus-electrico-buquebus-uruguay",
+    category: "project",
+    date: "2026-05-18",
+    featured: true,
+  },
+  {
     slug: "recambio-baterias-buses-montevideo",
     category: "project",
     date: "2026-01-12",
-    featured: true,
   },
   {
     slug: "alianza-estrategica-catl",
@@ -50,7 +55,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   },
 ];
 
-export const BLOG_POSTS_PER_PAGE = 6;
+export const BLOG_POSTS_PER_PAGE = 7;
 
 export function blogPostHref(slug: string) {
   return `${ROUTES.stories}/${slug}`;

@@ -9,7 +9,7 @@ export async function HeroSection() {
   const t = await getTranslations("home.hero");
 
   return (
-    <section className="relative flex min-h-[90vh] items-end overflow-hidden">
+    <section className="relative flex min-h-[72vh] items-center overflow-hidden md:min-h-[78vh]">
       <div
         className="absolute inset-0 bg-bg-primary"
         aria-hidden
@@ -26,15 +26,15 @@ export async function HeroSection() {
         <div className="absolute inset-0 bg-gradient-to-t from-bg-primary via-bg-primary/80 to-bg-primary/40" />
       </div>
 
-      <Container className="relative z-10 pb-16 pt-32 md:pb-24 md:pt-40">
+      <Container className="relative z-10 py-20 md:py-24">
         <SectionLabel>{t("label")}</SectionLabel>
-        <h1 className="mt-4 max-w-4xl text-balance text-4xl font-extrabold tracking-tight md:text-6xl lg:text-7xl">
+        <h1 className="mt-3 max-w-4xl text-balance text-4xl font-extrabold tracking-tight md:text-6xl lg:text-7xl">
           {t("h1")}
         </h1>
-        <p className="mt-6 max-w-2xl text-lg leading-relaxed text-text-muted md:text-xl">
+        <p className="mt-4 max-w-2xl text-lg leading-relaxed text-text-muted md:text-xl">
           {t("subhead")}
         </p>
-        <div className="mt-10 flex flex-wrap gap-4">
+        <div className="mt-8 flex flex-wrap gap-4">
           <Button href={ROUTES.solutions} variant="primary">
             {t("cta1")}
           </Button>
@@ -44,7 +44,7 @@ export async function HeroSection() {
         </div>
         <a
           href="#stats"
-          className="mt-16 inline-flex items-center gap-2 text-sm text-text-muted transition-colors hover:text-accent-green"
+          className="mt-10 inline-flex items-center gap-2 text-sm text-text-muted transition-colors hover:text-accent-green"
           aria-label="Scroll to stats"
         >
           <ChevronDown className="h-5 w-5 animate-bounce" />

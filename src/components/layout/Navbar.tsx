@@ -81,28 +81,27 @@ export function Navbar() {
           )}
         </div>
 
-        <div className="hidden items-center gap-3 lg:flex">
+        <div className="flex items-center gap-2 sm:gap-3">
           <LanguageToggle />
           <Button
             href={ROUTES.contact}
             variant="primary"
-            className="!px-5 !py-2 text-sm"
+            className="hidden !px-5 !py-2 text-sm lg:inline-flex"
           >
             {t("contact")}
           </Button>
+          <button
+            type="button"
+            className="relative z-50 rounded-lg p-2 text-text-primary lg:hidden"
+            onClick={() => {
+              setSolutionsOpen(false);
+              setMobileOpen(!mobileOpen);
+            }}
+            aria-label={mobileOpen ? "Close menu" : "Open menu"}
+          >
+            {mobileOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+          </button>
         </div>
-
-        <button
-          type="button"
-          className="relative z-50 rounded-lg p-2 text-text-primary lg:hidden"
-          onClick={() => {
-            setSolutionsOpen(false);
-            setMobileOpen(!mobileOpen);
-          }}
-          aria-label={mobileOpen ? "Close menu" : "Open menu"}
-        >
-          {mobileOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-        </button>
       </nav>
 
       <SolutionsMegaMenu
@@ -152,8 +151,7 @@ export function Navbar() {
               </Link>
             ))}
 
-            <div className="mt-4 flex flex-col gap-4 border-t border-border pt-4">
-              <LanguageToggle />
+            <div className="mt-4 border-t border-border pt-4">
               <Button
                 href={ROUTES.contact}
                 variant="primary"
