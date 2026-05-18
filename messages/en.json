@@ -1,0 +1,476 @@
+{
+  "nav": {
+    "home": "Home",
+    "solutions": "Solutions",
+    "about": "About Us",
+    "sustainability": "Sustainability",
+    "stories": "Stories",
+    "app": "NES Charge App",
+    "contact": "Contact"
+  },
+  "footer": {
+    "tagline": "We drive the change toward a sustainable future.",
+    "col2Title": "Solutions",
+    "col3Title": "Company",
+    "col4Title": "App & Contact",
+    "copyright": "© 2025 NES — New Energy Solutions. All rights reserved.",
+    "partners": "Our technology partners"
+  },
+  "menu": {
+    "catl": {
+      "title": "CATL Batteries",
+      "desc": "Only authorized technical service in Uruguay"
+    },
+    "charging": {
+      "title": "Charging Infrastructure",
+      "desc": "From 7 kW to 360 kW for fleets and public spaces"
+    },
+    "vehicles": {
+      "title": "Commercial Electric Vehicles",
+      "desc": "High-performance electric trucks and buses"
+    },
+    "bess": {
+      "title": "BESS Energy Storage",
+      "desc": "Integrate renewables and optimize energy costs"
+    },
+    "iot": {
+      "title": "IoT & Telemetry",
+      "desc": "We transform data into real-time decisions"
+    },
+    "app": {
+      "title": "NES Charge App",
+      "desc": "Find and pay for charging points from your phone"
+    }
+  },
+  "shared": {
+    "learnMore": "Learn more →"
+  },
+  "home": {
+    "hero": {
+      "label": "ELECTRIC MOBILITY ECOSYSTEM",
+      "h1": "Driving the Change Toward a Sustainable Future.",
+      "subhead": "A complete ecosystem: vehicles, charging infrastructure, energy storage, and IoT telemetry. With local support and global technology.",
+      "cta1": "Explore Our Solutions →",
+      "cta2": "Contact Us"
+    },
+    "stats": {
+      "s1": { "label": "years of market experience" },
+      "s2": { "label": "of installed power capacity" },
+      "s3": { "label": "electric trucks in operation" },
+      "s4": { "label": "vehicles connected with telemetry" }
+    },
+    "solutions": {
+      "label": "OUR SOLUTIONS",
+      "h2": "A complete ecosystem, under one roof.",
+      "subtext": "We design, install, and operate every part of the ecosystem — so you only focus on the results.",
+      "card1": {
+        "title": "CATL Batteries",
+        "desc": "The only authorized CATL technical service in Uruguay. Diagnostics, maintenance, and repair."
+      },
+      "card2": {
+        "title": "Charging Infrastructure",
+        "desc": "From 7 kW to 360 kW. Design, installation, and operation of charging networks for fleets and public spaces."
+      },
+      "card3": {
+        "title": "Commercial Electric Vehicles",
+        "desc": "High-performance electric trucks and buses. Over 50 units in operation."
+      },
+      "card4": {
+        "title": "BESS Energy Storage",
+        "desc": "Modular storage systems. Integrate renewables, optimize energy contracts, and guarantee operational continuity."
+      },
+      "card5": {
+        "title": "IoT & Telemetry",
+        "desc": "We transform data into decisions. Real-time control of fleets, chargers, and batteries."
+      },
+      "card6": {
+        "title": "NES Charge App",
+        "desc": "Find, pay, and charge from your phone. Available on iOS and Android."
+      },
+      "viewAll": "View all solutions"
+    },
+    "catl": {
+      "label": "STRATEGIC PARTNERSHIP",
+      "h2": "Global Technology. Local Support.",
+      "body": "NES is the only official representative and authorized CATL technical service in Uruguay — the world's largest battery manufacturer. A partnership that guarantees access to the best technology, with the local support your company needs.",
+      "badge": "Official CATL Representative — Uruguay"
+    },
+    "why": {
+      "label": "WHY NES",
+      "h2": "We don't sell a product. We deliver a system.",
+      "d1": {
+        "title": "Integrated Ecosystem",
+        "body": "Vehicles + charging + storage + IoT under one roof."
+      },
+      "d2": {
+        "title": "Proven Expertise",
+        "body": "Over 10 years executing projects in Uruguay and the region."
+      },
+      "d3": {
+        "title": "Global Partnerships",
+        "body": "CATL, KinWin, InfyPower, GTK — world-leading manufacturers."
+      },
+      "d4": {
+        "title": "Local Support",
+        "body": "We accompany you from design to daily operations. Technical team based in Uruguay."
+      }
+    },
+    "partners": {
+      "heading": "Our technology partners"
+    },
+    "blog": {
+      "label": "STORIES THAT MOVE ENERGY",
+      "h2": "Cases, partnerships, and innovations.",
+      "viewAll": "View all stories →",
+      "placeholderTitle": "Coming soon: new stories",
+      "placeholderExcerpt": "Real projects, concrete partnerships, and innovations transforming mobility in Uruguay."
+    },
+    "cta": {
+      "h2": "Ready for the transition?",
+      "body": "We accompany you from strategy to operations. Let's start building the infrastructure of the future today.",
+      "button": "Contact Us →"
+    }
+  },
+  "solutions": {
+    "hero": {
+      "h1": "Our Solutions",
+      "intro": "We design, install, and operate every component of the electric mobility ecosystem — so you can focus on what matters most: results."
+    },
+    "items": {
+      "catl": {
+        "f1": "Advanced diagnostics and State of Health (SoH) analysis",
+        "f2": "Maintenance with CATL-homologated parts and procedures",
+        "f3": "Warranty management and serial-level traceability"
+      },
+      "charging": {
+        "f1": "From 7 kW to 360 kW — AC and DC",
+        "f2": "OCPP 2.0 protocol and dynamic load balancing",
+        "f3": "Fleets, logistics hubs, terminals, and public spaces"
+      },
+      "vehicles": {
+        "f1": "High-performance trucks, buses, and machinery",
+        "f2": "Integration with CATL batteries and IoT platform",
+        "f3": "Over 50 units in operation in Uruguay"
+      },
+      "bess": {
+        "f1": "Renewable energy integration",
+        "f2": "Peak demand charge reduction",
+        "f3": "Industrial backup and operational continuity"
+      },
+      "iot": {
+        "f1": "Real-time fleet and charger monitoring",
+        "f2": "Predictive maintenance and route optimization",
+        "f3": "DHEMAX and TrackTec platforms"
+      },
+      "app": {
+        "f1": "Real-time charging point map",
+        "f2": "Integrated mobile payment",
+        "f3": "Session history and notifications"
+      }
+    }
+  },
+  "contact": {
+    "hero": {
+      "h1": "Contact",
+      "tagline": "Ready for the transition? We accompany you from strategy to operations."
+    },
+    "info": {
+      "location": "Montevideo, Uruguay",
+      "website": "nes.uy",
+      "heading": "Let's talk"
+    },
+    "form": {
+      "name": "Full name",
+      "company": "Company",
+      "email": "Corporate email",
+      "phone": "Phone (optional)",
+      "interest": "Which solution are you interested in?",
+      "message": "Message",
+      "submit": "Send Message →",
+      "success": "Thank you! We'll be in touch shortly.",
+      "error": "Something went wrong. Please try again or email us at contacto@nes.uy",
+      "interestOther": "Other"
+    }
+  },
+  "catl": {
+    "hero": {
+      "h1": "CATL Batteries — Authorized Technical Service",
+      "tagline": "The only ones in Uruguay with official CATL certification."
+    },
+    "overview": {
+      "h2": "Uruguay's Most Advanced Battery Service.",
+      "body": "At NES, we are the only official representative and authorized technical service for CATL in Uruguay. CATL is the world's largest lithium battery manufacturer — and we are the bridge between that world-class technology and the local market. We operate with CATL-certified procedures, tools, and parts. No other company in Uruguay can offer this level of authorized technical service."
+    },
+    "services": {
+      "heading": "Our Services",
+      "s1": "Advanced Diagnostics — Voltage, impedance, cell balancing, and State of Health (SoH) analysis per module.",
+      "s2": "BMS/Firmware Updates — Software management and system control updates.",
+      "s3": "Preventive Maintenance — Scheduled plans to extend battery life and safety.",
+      "s4": "Corrective Maintenance & Repair — With CATL-homologated parts and procedures.",
+      "s5": "Thermal Control — Temperature management and overload protection.",
+      "s6": "Warranty Management — Local support with full warranty traceability.",
+      "s7": "Traceability & Reporting — Serial-level tracking, detailed technical reports for fleet operators and OEMs."
+    },
+    "milestone": {
+      "heading": "A Historic Milestone",
+      "body": "In January 2026, NES performed the first complete battery replacement on Montevideo's electric buses — a historic milestone for Uruguayan public transit and a demonstration of our unique capabilities."
+    },
+    "cta": "Want to implement CATL service at your company?"
+  },
+  "charging": {
+    "hero": {
+      "h1": "Charging Infrastructure",
+      "tagline": "From 7 kW to 360 kW. Tailored solutions for every need."
+    },
+    "overview": {
+      "h2": "End-to-end charging networks",
+      "body": "At NES, we design, install, and operate charging networks for commercial fleets, public spaces, and industrial projects. Every installation is a complete system — from electrical engineering to after-sales support. We don't just sell a charger: we deliver a scalable end-to-end solution."
+    },
+    "specs": {
+      "powerRange": "Power range: 7 kW (AC slow) to 360 kW (DC fast charging)",
+      "protocol": "OCPP 2.0 protocol — compatible with any management platform",
+      "features": "Dynamic load balancing, simultaneous multi-vehicle charging, remote monitoring, user and consumption management"
+    },
+    "usecases": "Corporate fleets · Logistics hubs · Bus terminals · Public parking · Office buildings",
+    "partners": "Equipment: SSE and InfyPower — global leaders in charging infrastructure.",
+    "cta": "Need charging infrastructure for your operation?"
+  },
+  "vehicles": {
+    "hero": {
+      "h1": "Commercial Electric Vehicles",
+      "tagline": "We're not a dealership. We're your electrification partner."
+    },
+    "overview": {
+      "h2": "Zero-emissions fleets with integrated management",
+      "body": "NES commercializes high-performance electric trucks, buses, and machinery for companies transitioning to a zero-emissions fleet. Every vehicle comes integrated with CATL batteries and connected to our IoT platform — meaning you're not just buying a truck, but a complete management system. Over 50 units in operation in Uruguay are proof."
+    },
+    "types": {
+      "heading": "Vehicle Types",
+      "v1": "Heavy-duty electric trucks (up to 900 km range on certain models)",
+      "v2": "Electric urban buses (up to 600 km with CATL BC5 battery)",
+      "v3": "Commercial fleet vehicles"
+    },
+    "partners": "Manufacturers: XCMG, Dongfeng, Dayun, KinWin, Guangtong — leaders in commercial electric vehicles.",
+    "diffs": {
+      "heading": "Competitive advantages",
+      "d1": "Zero emissions — actively contributing to decarbonization goals.",
+      "d2": "Significant fuel cost savings vs. traditional diesel.",
+      "d3": "Lower maintenance requirements vs. combustion engines.",
+      "d4": "Telemetry and technical support integrated from day one."
+    },
+    "cta": "Ready to electrify your fleet?"
+  },
+  "bess": {
+    "hero": {
+      "h1": "BESS Energy Storage",
+      "tagline": "Store clean energy. Optimize costs. Guarantee continuity."
+    },
+    "overview": {
+      "h2": "Stored energy with CATL technology",
+      "body": "NES's BESS systems allow companies and industries to store energy, integrate renewable sources, reduce peak demand charges, and ensure operational continuity — all backed by CATL battery technology and world-class components."
+    },
+    "usecases": {
+      "heading": "Use Cases",
+      "u1": "Renewable energy integration (solar, wind)",
+      "u2": "Peak demand charge reduction in electricity contracts",
+      "u3": "Grid stability and backup power for industrial facilities",
+      "u4": "EV fleet charging support"
+    },
+    "sdg": "Each BESS project contributes to SDGs 7 (Clean Energy), 9 (Industry & Innovation), and 13 (Climate Action).",
+    "cta": "Want to optimize your energy consumption?"
+  },
+  "iot": {
+    "hero": {
+      "h1": "IoT & Telemetry",
+      "tagline": "We transform data into decisions."
+    },
+    "overview": {
+      "h2": "Real-time intelligent operations",
+      "body": "Through our DHEMAX and TrackTec platforms, NES connects vehicles, chargers, and batteries in real time. The result: a smarter, more efficient, and more predictable operation. Without telemetry, vehicles and chargers are just assets. With it, they become an intelligent operation."
+    },
+    "capabilities": {
+      "heading": "Capabilities",
+      "c1": "Real-time monitoring: energy consumption, battery health, vehicle location and status.",
+      "c2": "Route optimization: analysis to improve efficiency and reduce operating costs.",
+      "c3": "Predictive maintenance: anticipate failures before they affect operations.",
+      "c4": "Centralized control: a single dashboard for the entire fleet and energy infrastructure."
+    },
+    "platforms": "Platforms: DHEMAX and TrackTec — built for comprehensive fleet and energy management.",
+    "cta": "Want to connect your operation?"
+  },
+  "solutionDetail": {
+    "contactCta": "Contact Us →",
+    "backToSolutions": "View all solutions"
+  },
+  "app": {
+    "hero": {
+      "label": "AVAILABLE ON iOS AND ANDROID",
+      "h1": "Charge Your EV Anywhere.",
+      "subhead": "With the NES Charge App, you find charging points, pay, and monitor your session — all from your phone."
+    },
+    "cta": {
+      "appStore": "Download on App Store",
+      "googlePlay": "Get it on Google Play"
+    },
+    "features": {
+      "h2": "Everything you need in one place.",
+      "f1": {
+        "title": "Real-Time Map",
+        "desc": "Find all available charging points near you with real-time availability."
+      },
+      "f2": {
+        "title": "Integrated Payment",
+        "desc": "Pay for your charging session directly from the app. No physical cards or complicated processes."
+      },
+      "f3": {
+        "title": "Charging History",
+        "desc": "Track your energy consumption and spending per session over time."
+      },
+      "f4": {
+        "title": "Charge Notifications",
+        "desc": "Receive alerts when your vehicle finishes charging or if there's an interruption."
+      }
+    },
+    "map": {
+      "h2": "Uruguay's electric charging network.",
+      "desc": "NES operates an expanding charging network — available in Montevideo and other cities across the country. All integrated into the NES Charge App."
+    }
+  },
+  "about": {
+    "hero": {
+      "h1": "About Us",
+      "tagline": "Over 10 years building electric Uruguay."
+    },
+    "story": {
+      "label": "OUR STORY",
+      "h2": "A Uruguayan company with global vision.",
+      "body": "NES was born with the conviction that the energy transition was not a distant possibility — it was an urgent necessity. From the beginning, we committed to integrating world-class global technology with the expertise and closeness that only a local team can offer. Today, we are Uruguay's most complete electric mobility ecosystem, with over 10 years of executed projects, alliances with world-leading manufacturers, and a footprint that grows year after year."
+    },
+    "mission": {
+      "label": "MISSION & VISION",
+      "h2": "Driving change toward a sustainable future.",
+      "body": "We believe that innovation, when applied with purpose, can accelerate the transition to a cleaner, smarter energy future. Sustainability is not just a goal — it is the foundation of every project we execute."
+    },
+    "values": {
+      "label": "OUR VALUES",
+      "v1": {
+        "title": "Innovation with purpose",
+        "body": "We apply the most advanced technology to solve real challenges."
+      },
+      "v2": {
+        "title": "Local commitment",
+        "body": "We are Uruguayan. We know the local market, regulations, and needs."
+      },
+      "v3": {
+        "title": "World-class technology",
+        "body": "We work with the world's best manufacturers. Without compromising quality."
+      },
+      "v4": {
+        "title": "Real, measurable impact",
+        "body": "We measure the impact of every project — in avoided emissions, gained efficiency, and improved operations."
+      }
+    },
+    "partners": {
+      "h2": "World-class technology allies.",
+      "body": "We work with the world's most recognized manufacturers in electric mobility and energy storage: CATL, KinWin, Guangtong, InfyPower, GTK, and SL New Energy."
+    }
+  },
+  "sustainability": {
+    "hero": {
+      "h1": "Sustainability",
+      "tagline": "It's not a goal. It's the foundation of everything we do."
+    },
+    "intro": {
+      "body": "Every project NES executes directly contributes to the decarbonization of transport and industry in Uruguay. We measure our impact — in tons of CO₂ avoided, in kilometers traveled without fuel, in renewable energy stored — because we believe that sustainability without evidence is just marketing."
+    },
+    "sdg": {
+      "h2": "Aligned with the global agenda.",
+      "7": "SDG 7 — Affordable and Clean Energy: charging infrastructure and renewable integration.",
+      "9": "SDG 9 — Industry, Innovation & Infrastructure: IoT platforms and advanced BESS systems.",
+      "11": "SDG 11 — Sustainable Cities & Communities: electric buses for Montevideo's public transport.",
+      "13": "SDG 13 — Climate Action: measurable emissions reduction in fleets and urban transport."
+    },
+    "commitment": {
+      "h2": "Our commitment to the planet.",
+      "body": "Every electric truck in operation replaces thousands of liters of diesel per year. Every BESS system installed makes renewable energy a continuous reality. Every charging point deployed brings Uruguay closer to a carbon-free future. This is not vision — it's what we're already building."
+    },
+    "cta": "Want your company to be part of the change?"
+  },
+  "blog": {
+    "hero": {
+      "label": "STORIES THAT MOVE ENERGY",
+      "h1": "Stories",
+      "subhead": "Real projects, concrete partnerships, and innovations transforming mobility in Uruguay."
+    },
+    "readMore": "Read more →",
+    "author": "NES",
+    "post": {
+      "relatedLabel": "You might also like",
+      "shareLabel": "Share"
+    },
+    "categories": {
+      "project": "Project",
+      "partnership": "Partnership",
+      "innovation": "Innovation",
+      "press": "Press"
+    },
+    "posts": {
+      "recambio-baterias-buses-montevideo": {
+        "title": "First complete battery replacement on Montevideo's electric buses",
+        "excerpt": "A historic milestone for Uruguayan public transit performed by NES's authorized CATL technical team.",
+        "p1": "In January 2026, NES completed the first full battery replacement on Montevideo's electric bus fleet. The work was performed with procedures, tools, and parts homologated by CATL — the world's largest battery manufacturer.",
+        "p2": "This project demonstrates NES's local capacity to operate world-class technology with technical support in Uruguay, ensuring public transport continuity and extending the city's asset lifecycle.",
+        "p3": "The milestone consolidates NES as a regional reference in battery technical service and high-impact electric mobility."
+      },
+      "alianza-estrategica-catl": {
+        "title": "NES as official CATL representative and technical service in Uruguay",
+        "excerpt": "The partnership connecting world-leading battery technology with specialized local support.",
+        "p1": "NES is the only official representative and authorized technical service for CATL in Uruguay. This strategic alliance enables companies, fleets, and transit operators to access diagnostics, maintenance, and repair to global standards.",
+        "p2": "For local industry, it means less downtime, full warranty traceability, and direct access to the best energy storage technology available."
+      },
+      "flota-camiones-electricos-uruguay": {
+        "title": "Over 50 electric trucks in operation in Uruguay",
+        "excerpt": "NES drives commercial fleet electrification with vehicles integrated with telemetry and CATL batteries.",
+        "p1": "With over 50 units in operation, NES supports Uruguayan companies transitioning to zero-emissions fleets. Every vehicle is delivered integrated with CATL batteries and connected to telemetry platforms for real-time management.",
+        "p2": "Results include lower operating costs, reduced maintenance, and direct contribution to corporate decarbonization goals."
+      },
+      "sistema-bess-industrial": {
+        "title": "BESS systems: storage that transforms industrial operations",
+        "excerpt": "Renewable integration, peak demand reduction, and operational continuity with CATL technology.",
+        "p1": "NES's BESS systems enable industries to store energy, integrate renewable sources, and reduce peak demand charges in electricity contracts.",
+        "p2": "Every installation is designed as a complete system — from engineering to operations — with world-class components and local technical support."
+      },
+      "lanzamiento-app-nes-charge": {
+        "title": "NES Charge App: Uruguay's charging network in your pocket",
+        "excerpt": "Find, pay, and monitor charging sessions from iOS and Android.",
+        "p1": "The NES Charge App centralizes access to NES's charging network across Uruguay. Users can view real-time availability, pay for sessions, and receive notifications when charging completes.",
+        "p2": "The app is part of NES's integrated ecosystem: infrastructure, operations, and user experience in one place."
+      },
+      "nes-movilidad-electrica-prensa": {
+        "title": "NES consolidates leadership in electric mobility in Uruguay",
+        "excerpt": "Over a decade executing projects that transform national transport and industry.",
+        "p1": "With over 10 years of experience, NES is positioned as the country's most complete electric mobility ecosystem: vehicles, charging, storage, IoT, and consumer applications.",
+        "p2": "The company continues expanding its footprint with global partnerships and a Uruguayan technical team that supports every project from start to finish."
+      }
+    }
+  },
+  "mascot": {
+    "bubble": "Where do we start?",
+    "link1": {
+      "hook": "Have a fleet?",
+      "desc": "Explore our commercial electric vehicles"
+    },
+    "link2": {
+      "hook": "Need CATL battery support?",
+      "desc": "The only ones in Uruguay"
+    },
+    "link3": {
+      "hook": "Looking for a charging point?",
+      "desc": "Download the NES Charge App"
+    },
+    "link4": {
+      "hook": "Want to store renewable energy?",
+      "desc": "Our BESS systems"
+    }
+  }
+}

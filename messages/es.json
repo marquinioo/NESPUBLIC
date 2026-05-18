@@ -1,0 +1,476 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "solutions": "Soluciones",
+    "about": "Nosotros",
+    "sustainability": "Sostenibilidad",
+    "stories": "Historias",
+    "app": "App NES Charge",
+    "contact": "Contacto"
+  },
+  "footer": {
+    "tagline": "Impulsamos el cambio hacia un futuro sostenible.",
+    "col2Title": "Soluciones",
+    "col3Title": "Empresa",
+    "col4Title": "App & Contacto",
+    "copyright": "© 2025 NES — New Energy Solutions. Todos los derechos reservados.",
+    "partners": "Nuestros socios tecnológicos"
+  },
+  "menu": {
+    "catl": {
+      "title": "Baterías CATL",
+      "desc": "Único servicio técnico autorizado en Uruguay"
+    },
+    "charging": {
+      "title": "Infraestructura de Carga",
+      "desc": "De 7 kW a 360 kW para flotas y espacios públicos"
+    },
+    "vehicles": {
+      "title": "Vehículos Eléctricos Comerciales",
+      "desc": "Camiones y buses eléctricos de alta performance"
+    },
+    "bess": {
+      "title": "Almacenamiento BESS",
+      "desc": "Integrá renovables y optimizá costos eléctricos"
+    },
+    "iot": {
+      "title": "IoT & Telemetría",
+      "desc": "Transformamos datos en decisiones en tiempo real"
+    },
+    "app": {
+      "title": "App NES Charge",
+      "desc": "Encontrá y pagá puntos de carga desde tu celular"
+    }
+  },
+  "shared": {
+    "learnMore": "Ver más →"
+  },
+  "home": {
+    "hero": {
+      "label": "ECOSISTEMA DE MOVILIDAD ELÉCTRICA",
+      "h1": "Impulsamos el cambio hacia un futuro sostenible.",
+      "subhead": "Un ecosistema completo: vehículos, infraestructura de carga, almacenamiento de energía y telemetría IoT. Con soporte local y tecnología global.",
+      "cta1": "Conocé nuestras soluciones →",
+      "cta2": "Contactanos"
+    },
+    "stats": {
+      "s1": { "label": "años de experiencia en el mercado" },
+      "s2": { "label": "de potencia instalada" },
+      "s3": { "label": "camiones eléctricos en operación" },
+      "s4": { "label": "vehículos conectados con telemetría" }
+    },
+    "solutions": {
+      "label": "NUESTRAS SOLUCIONES",
+      "h2": "Un ecosistema completo, bajo un solo techo.",
+      "subtext": "Diseñamos, instalamos y operamos cada parte del ecosistema — para que vos solo te preocupés por el resultado.",
+      "card1": {
+        "title": "Baterías CATL",
+        "desc": "Único servicio técnico autorizado CATL en Uruguay. Diagnóstico, mantenimiento y reparación."
+      },
+      "card2": {
+        "title": "Infraestructura de Carga",
+        "desc": "De 7 kW a 360 kW. Diseño, instalación y operación de redes de carga para flotas y espacios públicos."
+      },
+      "card3": {
+        "title": "Vehículos Eléctricos Comerciales",
+        "desc": "Camiones y buses eléctricos de alta performance. Más de 50 unidades en operación."
+      },
+      "card4": {
+        "title": "Almacenamiento BESS",
+        "desc": "Sistemas de almacenamiento modular. Integrá renovables, optimizá contratos eléctricos y garantizá continuidad operativa."
+      },
+      "card5": {
+        "title": "IoT & Telemetría",
+        "desc": "Transformamos datos en decisiones. Control en tiempo real de flotas, cargadores y baterías."
+      },
+      "card6": {
+        "title": "App NES Charge",
+        "desc": "Encontrá, pagá y cargá desde tu celular. Disponible en iOS y Android."
+      },
+      "viewAll": "Ver todas las soluciones"
+    },
+    "catl": {
+      "label": "ALIANZA ESTRATÉGICA",
+      "h2": "Tecnología global. Soporte local.",
+      "body": "NES es el único representante oficial y servicio técnico autorizado de CATL en Uruguay — el mayor fabricante de baterías del mundo. Una alianza que garantiza acceso a la mejor tecnología, con el respaldo local que tu empresa necesita.",
+      "badge": "Representante Oficial CATL — Uruguay"
+    },
+    "why": {
+      "label": "POR QUÉ NES",
+      "h2": "No vendemos un producto. Entregamos un sistema.",
+      "d1": {
+        "title": "Ecosistema integrado",
+        "body": "Vehículos + carga + almacenamiento + IoT bajo un mismo techo."
+      },
+      "d2": {
+        "title": "Expertise comprobado",
+        "body": "Más de 10 años ejecutando proyectos en Uruguay y la región."
+      },
+      "d3": {
+        "title": "Alianzas globales",
+        "body": "CATL, KinWin, InfyPower, GTK — fabricantes líderes mundiales."
+      },
+      "d4": {
+        "title": "Soporte local",
+        "body": "Te acompañamos desde el diseño hasta la operación diaria. Equipo técnico en Uruguay."
+      }
+    },
+    "partners": {
+      "heading": "Nuestros socios tecnológicos"
+    },
+    "blog": {
+      "label": "HISTORIAS QUE MUEVEN LA ENERGÍA",
+      "h2": "Casos, alianzas e innovaciones.",
+      "viewAll": "Ver todas las historias →",
+      "placeholderTitle": "Próximamente: nuevas historias",
+      "placeholderExcerpt": "Proyectos reales, alianzas concretas e innovaciones que transforman la movilidad en Uruguay."
+    },
+    "cta": {
+      "h2": "¿Listo para la transición?",
+      "body": "Te acompañamos desde la estrategia hasta la operación. Empecemos hoy a construir la infraestructura del futuro.",
+      "button": "Contactanos →"
+    }
+  },
+  "solutions": {
+    "hero": {
+      "h1": "Nuestras Soluciones",
+      "intro": "Diseñamos, instalamos y operamos cada componente del ecosistema de movilidad eléctrica — para que te enfoqués en lo que más importa: resultados."
+    },
+    "items": {
+      "catl": {
+        "f1": "Diagnóstico avanzado y análisis de Estado de Salud (SoH)",
+        "f2": "Mantenimiento con repuestos y procedimientos homologados CATL",
+        "f3": "Gestión de garantías y trazabilidad por serie"
+      },
+      "charging": {
+        "f1": "De 7 kW a 360 kW — CA y CC",
+        "f2": "Protocolo OCPP 2.0 y balanceo dinámico de carga",
+        "f3": "Flotas, hubs logísticos, terminales y espacios públicos"
+      },
+      "vehicles": {
+        "f1": "Camiones, buses y maquinaria de alta performance",
+        "f2": "Integración con baterías CATL y plataforma IoT",
+        "f3": "Más de 50 unidades en operación en Uruguay"
+      },
+      "bess": {
+        "f1": "Integración de energías renovables",
+        "f2": "Reducción de cargos por demanda pico",
+        "f3": "Respaldo y continuidad operativa industrial"
+      },
+      "iot": {
+        "f1": "Monitoreo en tiempo real de flotas y cargadores",
+        "f2": "Mantenimiento predictivo y optimización de rutas",
+        "f3": "Plataformas DHEMAX y TrackTec"
+      },
+      "app": {
+        "f1": "Mapa de puntos de carga en tiempo real",
+        "f2": "Pago integrado desde el celular",
+        "f3": "Historial y notificaciones de sesión"
+      }
+    }
+  },
+  "contact": {
+    "hero": {
+      "h1": "Contacto",
+      "tagline": "¿Listo para la transición? Te acompañamos desde la estrategia hasta la operación."
+    },
+    "info": {
+      "location": "Montevideo, Uruguay",
+      "website": "nes.uy",
+      "heading": "Hablemos"
+    },
+    "form": {
+      "name": "Nombre completo",
+      "company": "Empresa",
+      "email": "Email corporativo",
+      "phone": "Teléfono (opcional)",
+      "interest": "¿En qué solución estás interesado?",
+      "message": "Mensaje",
+      "submit": "Enviar mensaje →",
+      "success": "¡Gracias! Nos ponemos en contacto a la brevedad.",
+      "error": "Hubo un error al enviar. Intentá de nuevo o escribinos a contacto@nes.uy",
+      "interestOther": "Otro"
+    }
+  },
+  "catl": {
+    "hero": {
+      "h1": "Baterías CATL — Servicio Técnico Autorizado",
+      "tagline": "Los únicos en Uruguay con certificación oficial CATL."
+    },
+    "overview": {
+      "h2": "El servicio de baterías más avanzado de Uruguay.",
+      "body": "En NES somos el único representante oficial y servicio técnico autorizado de CATL en Uruguay. CATL es el mayor fabricante de baterías de litio del mundo — y nosotros somos el puente entre esa tecnología de clase mundial y el mercado local. Operamos con procedimientos, herramientas y repuestos homologados CATL. Ninguna otra empresa en Uruguay puede ofrecer este nivel de servicio técnico autorizado."
+    },
+    "services": {
+      "heading": "Nuestros Servicios",
+      "s1": "Diagnóstico Avanzado — Voltaje, impedancia, balanceo de celdas y análisis de Estado de Salud (SoH) por módulo.",
+      "s2": "Actualización de BMS/Firmware — Gestión de software y actualizaciones de control del sistema.",
+      "s3": "Mantenimiento Preventivo — Planes programados para extender la vida útil y seguridad de las baterías.",
+      "s4": "Mantenimiento Correctivo y Reparación — Con repuestos y procedimientos homologados CATL.",
+      "s5": "Control Térmico — Gestión de temperatura y protección contra sobrecargas.",
+      "s6": "Gestión de Garantías — Soporte local con trazabilidad completa de la garantía.",
+      "s7": "Trazabilidad e Informes — Seguimiento a nivel de serie, informes técnicos detallados para operadores de flota y OEMs."
+    },
+    "milestone": {
+      "heading": "Un Hito Histórico",
+      "body": "En enero de 2026, NES realizó el primer recambio completo de baterías en los buses eléctricos de Montevideo — un hito histórico para el transporte público uruguayo y una demostración de nuestras capacidades únicas."
+    },
+    "cta": "¿Querés implementar servicio CATL en tu empresa?"
+  },
+  "charging": {
+    "hero": {
+      "h1": "Infraestructura de Carga",
+      "tagline": "De 7 kW a 360 kW. Soluciones a medida para cada necesidad."
+    },
+    "overview": {
+      "h2": "Redes de carga de extremo a extremo",
+      "body": "En NES diseñamos, instalamos y operamos redes de carga para flotas comerciales, espacios públicos y proyectos industriales. Cada instalación es un sistema completo — desde la ingeniería eléctrica hasta el soporte post-venta. No vendemos solo un cargador: entregamos una solución escalable de extremo a extremo."
+    },
+    "specs": {
+      "powerRange": "Rango de potencia: 7 kW (CA lento) hasta 360 kW (CC carga rápida)",
+      "protocol": "Protocolo OCPP 2.0 — compatible con cualquier plataforma de gestión",
+      "features": "Balanceo dinámico de carga, carga simultánea multivehículo, monitoreo remoto, gestión de usuarios y consumos"
+    },
+    "usecases": "Flotas corporativas · Hubs logísticos · Terminales de buses · Estacionamientos públicos · Edificios de oficinas",
+    "partners": "Equipos: SSE e InfyPower — líderes globales en infraestructura de carga.",
+    "cta": "¿Necesitás infraestructura de carga para tu operación?"
+  },
+  "vehicles": {
+    "hero": {
+      "h1": "Vehículos Eléctricos Comerciales",
+      "tagline": "No somos un concesionario. Somos tu socio de electrificación."
+    },
+    "overview": {
+      "h2": "Flotas cero emisiones con gestión integrada",
+      "body": "NES comercializa camiones, buses y maquinaria eléctrica de alta performance para empresas que están transitando hacia una flota cero emisiones. Cada vehículo viene integrado con baterías CATL y conectado a nuestra plataforma IoT — lo que significa que no comprás solo un camión, sino un sistema de gestión completo. Más de 50 unidades en operación en Uruguay son la prueba."
+    },
+    "types": {
+      "heading": "Tipos de Vehículos",
+      "v1": "Camiones eléctricos pesados (hasta 900 km de autonomía en ciertos modelos)",
+      "v2": "Buses eléctricos urbanos (hasta 600 km con batería CATL BC5)",
+      "v3": "Vehículos comerciales de flota"
+    },
+    "partners": "Fabricantes: XCMG, Dongfeng, Dayun, KinWin, Guangtong — líderes en vehículos eléctricos comerciales.",
+    "diffs": {
+      "heading": "Ventajas competitivas",
+      "d1": "Cero emisiones — contribuís activamente a los objetivos de descarbonización.",
+      "d2": "Ahorro significativo en combustible vs. diésel tradicional.",
+      "d3": "Menos requerimientos de mantenimiento vs. motores de combustión.",
+      "d4": "Telemetría y soporte técnico integrados desde el día uno."
+    },
+    "cta": "¿Querés electrificar tu flota?"
+  },
+  "bess": {
+    "hero": {
+      "h1": "Almacenamiento de Energía BESS",
+      "tagline": "Almacená energía limpia. Optimizá costos. Garantizá continuidad."
+    },
+    "overview": {
+      "h2": "Energía almacenada con tecnología CATL",
+      "body": "Los sistemas BESS de NES permiten a empresas e industrias almacenar energía, integrar fuentes renovables, reducir cargos por demanda pico y asegurar la continuidad operativa — todo respaldado por tecnología de baterías CATL y componentes de clase mundial."
+    },
+    "usecases": {
+      "heading": "Casos de Uso",
+      "u1": "Integración de energías renovables (solar, eólica)",
+      "u2": "Reducción de cargos por demanda pico en contratos eléctricos",
+      "u3": "Estabilidad de la red y energía de respaldo para instalaciones industriales",
+      "u4": "Soporte para carga de flotas eléctricas"
+    },
+    "sdg": "Cada proyecto BESS contribuye a los ODS 7 (Energía Limpia), 9 (Industria e Innovación) y 13 (Acción por el Clima).",
+    "cta": "¿Querés optimizar tu consumo energético?"
+  },
+  "iot": {
+    "hero": {
+      "h1": "IoT & Telemetría",
+      "tagline": "Transformamos datos en decisiones."
+    },
+    "overview": {
+      "h2": "Operaciones inteligentes en tiempo real",
+      "body": "A través de nuestras plataformas DHEMAX y TrackTec, NES conecta vehículos, cargadores y baterías en tiempo real. El resultado: una operación más inteligente, eficiente y predecible. Sin telemetría, los vehículos y cargadores son solo activos. Con ella, se convierten en una operación inteligente."
+    },
+    "capabilities": {
+      "heading": "Capacidades",
+      "c1": "Monitoreo en tiempo real: consumo energético, salud de la batería, ubicación y estado del vehículo.",
+      "c2": "Optimización de rutas: análisis para mejorar la eficiencia y reducir costos operativos.",
+      "c3": "Mantenimiento predictivo: anticipá fallas antes de que afecten la operación.",
+      "c4": "Control centralizado: un solo panel para toda la flota e infraestructura energética."
+    },
+    "platforms": "Plataformas: DHEMAX y TrackTec — desarrolladas para la gestión integral de flotas y energía.",
+    "cta": "¿Querés conectar tu operación?"
+  },
+  "solutionDetail": {
+    "contactCta": "Contactanos →",
+    "backToSolutions": "Ver todas las soluciones"
+  },
+  "app": {
+    "hero": {
+      "label": "DISPONIBLE EN iOS Y ANDROID",
+      "h1": "Cargá tu vehículo eléctrico en cualquier parte.",
+      "subhead": "Con la App NES Charge encontrás puntos de carga, pagás y monitoreás tu sesión — todo desde tu celular."
+    },
+    "cta": {
+      "appStore": "Descargar en App Store",
+      "googlePlay": "Descargar en Google Play"
+    },
+    "features": {
+      "h2": "Todo lo que necesitás en un solo lugar.",
+      "f1": {
+        "title": "Mapa en tiempo real",
+        "desc": "Encontrá todos los puntos de carga disponibles cerca de vos con disponibilidad en tiempo real."
+      },
+      "f2": {
+        "title": "Pago integrado",
+        "desc": "Pagá la sesión de carga directo desde la app. Sin tarjetas físicas ni procesos complicados."
+      },
+      "f3": {
+        "title": "Historial de cargas",
+        "desc": "Seguí tu consumo energético y gasto por sesión a lo largo del tiempo."
+      },
+      "f4": {
+        "title": "Notificaciones de carga",
+        "desc": "Recibí alertas cuando tu vehículo termine de cargar o si hay alguna interrupción."
+      }
+    },
+    "map": {
+      "h2": "La red de carga eléctrica de Uruguay.",
+      "desc": "NES opera una red de puntos de carga en expansión — disponibles en Montevideo y otras ciudades del país. Todos integrados en la App NES Charge."
+    }
+  },
+  "about": {
+    "hero": {
+      "h1": "Nosotros",
+      "tagline": "Más de 10 años construyendo el Uruguay eléctrico."
+    },
+    "story": {
+      "label": "NUESTRA HISTORIA",
+      "h2": "Una empresa uruguaya con visión global.",
+      "body": "NES nació con la convicción de que la transición energética no era una posibilidad lejana — era una necesidad urgente. Desde nuestros inicios, apostamos por integrar tecnología global de clase mundial con el expertise y la cercanía que solo un equipo local puede ofrecer. Hoy somos el ecosistema de movilidad eléctrica más completo de Uruguay, con más de 10 años de proyectos ejecutados, alianzas con fabricantes líderes mundiales y una huella que crece año a año."
+    },
+    "mission": {
+      "label": "MISIÓN Y VISIÓN",
+      "h2": "Impulsar el cambio hacia un futuro sostenible.",
+      "body": "Creemos que la innovación, cuando se aplica con propósito, puede acelerar la transición hacia un futuro energético más limpio e inteligente. La sostenibilidad no es solo un objetivo — es la base de cada proyecto que ejecutamos."
+    },
+    "values": {
+      "label": "NUESTROS VALORES",
+      "v1": {
+        "title": "Innovación con propósito",
+        "body": "Aplicamos la tecnología más avanzada para resolver desafíos reales."
+      },
+      "v2": {
+        "title": "Compromiso local",
+        "body": "Somos uruguayos. Conocemos el mercado, las regulaciones y las necesidades locales."
+      },
+      "v3": {
+        "title": "Tecnología de clase mundial",
+        "body": "Trabajamos con los mejores fabricantes del mundo. Sin comprometer calidad."
+      },
+      "v4": {
+        "title": "Impacto real y medible",
+        "body": "Medimos el impacto de cada proyecto. En emisiones evitadas, en eficiencia ganada, en operaciones mejoradas."
+      }
+    },
+    "partners": {
+      "h2": "Aliados tecnológicos de clase mundial.",
+      "body": "Trabajamos con los fabricantes más reconocidos del mundo en movilidad eléctrica y almacenamiento energético: CATL, KinWin, Guangtong, InfyPower, GTK y SL New Energy."
+    }
+  },
+  "sustainability": {
+    "hero": {
+      "h1": "Sostenibilidad",
+      "tagline": "No es un objetivo. Es la base de todo lo que hacemos."
+    },
+    "intro": {
+      "body": "Cada proyecto que NES ejecuta contribuye directamente a la descarbonización del transporte y la industria en Uruguay. Medimos nuestro impacto — en toneladas de CO₂ evitadas, en kilómetros recorridos sin combustible, en energía renovable almacenada — porque creemos que la sostenibilidad sin evidencia es solo marketing."
+    },
+    "sdg": {
+      "h2": "Alineados con la agenda global.",
+      "7": "ODS 7 — Energía asequible y no contaminante: infraestructura de carga e integración de renovables.",
+      "9": "ODS 9 — Industria, innovación e infraestructura: plataformas IoT y sistemas BESS avanzados.",
+      "11": "ODS 11 — Ciudades y comunidades sostenibles: buses eléctricos para el transporte público de Montevideo.",
+      "13": "ODS 13 — Acción por el clima: reducción medible de emisiones en flotas y transporte urbano."
+    },
+    "commitment": {
+      "h2": "Nuestro compromiso con el planeta.",
+      "body": "Cada camión eléctrico en operación reemplaza miles de litros de diésel al año. Cada sistema BESS instalado permite que las energías renovables sean una realidad continua. Cada punto de carga desplegado acerca a Uruguay a un futuro libre de carbono. Esto no es visión — es lo que ya estamos construyendo."
+    },
+    "cta": "¿Querés que tu empresa forme parte del cambio?"
+  },
+  "blog": {
+    "hero": {
+      "label": "HISTORIAS QUE MUEVEN LA ENERGÍA",
+      "h1": "Historias",
+      "subhead": "Proyectos reales, alianzas concretas e innovaciones que están transformando la movilidad en Uruguay."
+    },
+    "readMore": "Leer más →",
+    "author": "NES",
+    "post": {
+      "relatedLabel": "También te puede interesar",
+      "shareLabel": "Compartir"
+    },
+    "categories": {
+      "project": "Proyecto",
+      "partnership": "Alianza",
+      "innovation": "Innovación",
+      "press": "Prensa"
+    },
+    "posts": {
+      "recambio-baterias-buses-montevideo": {
+        "title": "Primer recambio completo de baterías en buses eléctricos de Montevideo",
+        "excerpt": "Un hito histórico para el transporte público uruguayo ejecutado por el equipo técnico autorizado CATL de NES.",
+        "p1": "En enero de 2026, NES completó el primer recambio integral de baterías en la flota de buses eléctricos de Montevideo. El trabajo se realizó con procedimientos, herramientas y repuestos homologados por CATL — el mayor fabricante de baterías del mundo.",
+        "p2": "Este proyecto demuestra la capacidad local de NES para operar tecnología de clase mundial con soporte técnico en Uruguay, garantizando continuidad operativa del transporte público y extendiendo la vida útil de los activos de la ciudad.",
+        "p3": "El hito consolida a NES como referente regional en servicio técnico de baterías y movilidad eléctrica de alto impacto."
+      },
+      "alianza-estrategica-catl": {
+        "title": "NES como representante oficial y servicio técnico CATL en Uruguay",
+        "excerpt": "La alianza que conecta la tecnología de baterías líder mundial con soporte local especializado.",
+        "p1": "NES es el único representante oficial y servicio técnico autorizado de CATL en Uruguay. Esta alianza estratégica permite a empresas, flotas y operadores de transporte acceder a diagnóstico, mantenimiento y reparación con estándares globales.",
+        "p2": "Para la industria local, significa menor tiempo de inactividad, trazabilidad completa de garantías y acceso directo a la mejor tecnología de almacenamiento energético disponible."
+      },
+      "flota-camiones-electricos-uruguay": {
+        "title": "Más de 50 camiones eléctricos en operación en Uruguay",
+        "excerpt": "NES impulsa la electrificación de flotas comerciales con vehículos integrados a telemetría y baterías CATL.",
+        "p1": "Con más de 50 unidades en operación, NES acompaña a empresas uruguayas en la transición hacia flotas cero emisiones. Cada vehículo se entrega integrado con baterías CATL y conectado a plataformas de telemetría para gestión en tiempo real.",
+        "p2": "Los resultados incluyen reducción de costos operativos, menor mantenimiento y contribución directa a objetivos de descarbonización corporativa."
+      },
+      "sistema-bess-industrial": {
+        "title": "Sistemas BESS: almacenamiento que transforma la operación industrial",
+        "excerpt": "Integración de renovables, reducción de demanda pico y continuidad operativa con tecnología CATL.",
+        "p1": "Los sistemas BESS de NES permiten a industrias almacenar energía, integrar fuentes renovables y reducir cargos por demanda pico en contratos eléctricos.",
+        "p2": "Cada instalación se diseña como un sistema completo — desde ingeniería hasta operación — con componentes de clase mundial y respaldo técnico local."
+      },
+      "lanzamiento-app-nes-charge": {
+        "title": "App NES Charge: la red de carga uruguaya en tu bolsillo",
+        "excerpt": "Encontrá, pagá y monitoreá sesiones de carga desde iOS y Android.",
+        "p1": "La App NES Charge centraliza el acceso a la red de puntos de carga de NES en Uruguay. Los usuarios pueden ver disponibilidad en tiempo real, pagar sesiones y recibir notificaciones al finalizar la carga.",
+        "p2": "La aplicación es parte del ecosistema integrado de NES: infraestructura, operación y experiencia de usuario en un solo lugar."
+      },
+      "nes-movilidad-electrica-prensa": {
+        "title": "NES consolida su liderazgo en movilidad eléctrica en Uruguay",
+        "excerpt": "Más de una década ejecutando proyectos que transforman el transporte y la industria nacional.",
+        "p1": "Con más de 10 años de experiencia, NES se posiciona como el ecosistema de movilidad eléctrica más completo del país: vehículos, carga, almacenamiento, IoT y aplicaciones para usuarios finales.",
+        "p2": "La empresa continúa expandiendo su huella con alianzas globales y un equipo técnico uruguayo que acompaña cada proyecto de principio a fin."
+      }
+    }
+  },
+  "mascot": {
+    "bubble": "¿Por dónde empezamos?",
+    "link1": {
+      "hook": "¿Tenés una flota?",
+      "desc": "Conocé nuestros vehículos eléctricos comerciales"
+    },
+    "link2": {
+      "hook": "¿Necesitás soporte de baterías CATL?",
+      "desc": "Únicos en Uruguay"
+    },
+    "link3": {
+      "hook": "¿Buscás dónde cargar tu vehículo?",
+      "desc": "Descargá la App NES Charge"
+    },
+    "link4": {
+      "hook": "¿Querés almacenar energía renovable?",
+      "desc": "Nuestros sistemas BESS"
+    }
+  }
+}
