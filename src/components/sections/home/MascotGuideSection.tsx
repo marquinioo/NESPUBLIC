@@ -29,33 +29,44 @@ export function MascotGuideSection() {
       />
       <Container className="relative">
         <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
-          <AnimateOnView className="relative mx-auto max-w-md lg:mx-0">
-            <div className="relative mb-6 w-fit rounded-2xl border border-border bg-bg-surface px-4 py-3 text-sm font-medium shadow-lg lg:absolute lg:-top-4 lg:left-8 lg:mb-0">
-              {t("bubble")}
-              <span
-                className="absolute -bottom-2 left-8 h-4 w-4 rotate-45 border-b border-r border-border bg-bg-surface"
-                aria-hidden
-              />
+          <div className="relative mx-auto w-full max-w-[360px] md:max-w-[520px] lg:max-w-none">
+            <div className="relative z-0 overflow-visible rounded-2xl border border-border bg-bg-surface/30 p-3 md:p-4">
+              <motion.div
+                initial={reduceMotion ? false : { opacity: 0, x: -60 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6 }}
+                className={reduceMotion ? "" : "animate-mascot-idle"}
+              >
+                <Image
+                  src={MASCOT_IMAGES[locale]}
+                  alt="Voltio — NES mascot"
+                  width={1024}
+                  height={1024}
+                  sizes="(max-width: 768px) 360px, (max-width: 1024px) 520px, 560px"
+                  quality={95}
+                  className="relative z-0 h-auto w-full rounded-xl object-contain"
+                  priority={false}
+                />
+              </motion.div>
             </div>
+
             <motion.div
-              initial={reduceMotion ? false : { opacity: 0, x: -60 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              className="pointer-events-none absolute left-8 top-8 z-20 md:left-11 md:top-11"
+              initial={reduceMotion ? false : { opacity: 0, y: 8 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-              className={`relative mx-auto w-full max-w-[360px] md:max-w-[520px] lg:max-w-none ${reduceMotion ? "" : "animate-mascot-idle"}`}
+              transition={{ duration: 0.5, delay: 0.2 }}
             >
-              <Image
-                src={MASCOT_IMAGES[locale]}
-                alt="Voltio — NES mascot"
-                width={1024}
-                height={1024}
-                sizes="(max-width: 768px) 360px, (max-width: 1024px) 520px, 560px"
-                quality={95}
-                className="h-auto w-full object-contain"
-                priority={false}
-              />
+              <div className="pointer-events-auto relative max-w-[min(100%,14rem)] rounded-2xl border border-border bg-bg-surface px-4 py-3 text-sm font-medium text-text-primary shadow-xl ring-1 ring-black/10">
+                {t("bubble")}
+                <span
+                  className="absolute -bottom-2 left-10 h-4 w-4 rotate-45 border-b border-r border-border bg-bg-surface"
+                  aria-hidden
+                />
+              </div>
             </motion.div>
-          </AnimateOnView>
+          </div>
 
           <div className="grid gap-4">
             {MASCOT_LINKS.map((link, i) => (
