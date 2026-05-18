@@ -335,7 +335,30 @@
     "map": {
       "h2": "乌拉圭电动汽车充电网络。",
       "desc": "NES 运营不断扩展的充电网络——覆盖蒙得维的亚及全国其他城市，全部集成于 NES Charge 应用。",
-      "iframeTitle": "乌拉圭蒙得维的亚 NES 充电点地图"
+      "iframeTitle": "乌拉圭 NES 充电点地图",
+      "fallbackHint": "在 Vercel 中设置 NEXT_PUBLIC_GOOGLE_MAPS_API_KEY 以在地图上显示充电点。",
+      "towns": {
+        "montevideo": "蒙得维的亚",
+        "artigas": "阿蒂加斯",
+        "canelones": "卡内洛内斯",
+        "melo": "梅洛",
+        "colonia": "科洛尼亚-萨克拉门托",
+        "durazno": "杜拉斯诺",
+        "trinidad": "特立尼达",
+        "florida": "佛罗里达",
+        "minas": "米纳斯",
+        "maldonado": "马尔多纳多",
+        "puntaDelEste": "埃斯特角城",
+        "paysandu": "派桑杜",
+        "frayBentos": "弗赖本托斯",
+        "rivera": "里韦拉",
+        "rocha": "罗恰",
+        "salto": "萨尔托",
+        "sanJose": "圣何塞-德马约",
+        "mercedes": "梅塞德斯",
+        "tacuarembo": "塔夸伦博",
+        "treintaTres": "三十三人城"
+      }
     }
   },
   "about": {

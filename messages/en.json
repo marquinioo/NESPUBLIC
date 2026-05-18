@@ -335,7 +335,30 @@
     "map": {
       "h2": "Uruguay's electric charging network.",
       "desc": "NES operates an expanding charging network — available in Montevideo and other cities across the country. All integrated into the NES Charge App.",
-      "iframeTitle": "NES charging points map in Montevideo, Uruguay"
+      "iframeTitle": "NES charging points map across Uruguay",
+      "fallbackHint": "Set NEXT_PUBLIC_GOOGLE_MAPS_API_KEY in Vercel to display charging points on the map.",
+      "towns": {
+        "montevideo": "Montevideo",
+        "artigas": "Artigas",
+        "canelones": "Canelones",
+        "melo": "Melo",
+        "colonia": "Colonia del Sacramento",
+        "durazno": "Durazno",
+        "trinidad": "Trinidad",
+        "florida": "Florida",
+        "minas": "Minas",
+        "maldonado": "Maldonado",
+        "puntaDelEste": "Punta del Este",
+        "paysandu": "Paysandú",
+        "frayBentos": "Fray Bentos",
+        "rivera": "Rivera",
+        "rocha": "Rocha",
+        "salto": "Salto",
+        "sanJose": "San José de Mayo",
+        "mercedes": "Mercedes",
+        "tacuarembo": "Tacuarembó",
+        "treintaTres": "Treinta y Tres"
+      }
     }
   },
   "about": {
