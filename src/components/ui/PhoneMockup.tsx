@@ -1,6 +1,15 @@
 import { cn } from "@/lib/cn";
+import Image from "next/image";
 
-export function PhoneMockup({ className }: { className?: string }) {
+export function PhoneMockup({
+  className,
+  imageSrc,
+  imageAlt = "NES Charge app screenshot",
+}: {
+  className?: string;
+  imageSrc?: string;
+  imageAlt?: string;
+}) {
   return (
     <div
       className={cn(
@@ -9,8 +18,19 @@ export function PhoneMockup({ className }: { className?: string }) {
       )}
     >
       <div className="absolute left-1/2 top-3 h-5 w-20 -translate-x-1/2 rounded-full bg-bg-primary" />
-      <div className="aspect-[9/19] overflow-hidden rounded-[2rem] bg-gradient-to-b from-bg-surface via-accent-green/20 to-bg-primary">
-        <div className="flex h-full flex-col p-4">
+      <div className="relative aspect-[9/19] overflow-hidden rounded-[2rem] bg-gradient-to-b from-bg-surface via-accent-green/20 to-bg-primary">
+        {imageSrc && (
+          <Image
+            src={imageSrc}
+            alt={imageAlt}
+            fill
+            sizes="(max-width: 768px) 260px, 300px"
+            className="object-cover"
+            quality={90}
+            priority={false}
+          />
+        )}
+        <div className="flex h-full flex-col p-4 relative z-10">
           <div className="mb-4 h-3 w-16 rounded bg-accent-green/40" />
           <div className="flex-1 space-y-2">
             {[1, 2, 3, 4].map((i) => (

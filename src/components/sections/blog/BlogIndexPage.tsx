@@ -4,6 +4,7 @@ import { formatBlogDate, blogPostHref } from "@/lib/blog";
 import { PageHero } from "@/components/ui/PageHero";
 import { Container } from "@/components/ui/Container";
 import { BlogCard } from "@/components/ui/BlogCard";
+import { blogHeroImageSrc } from "@/lib/site-images";
 
 export async function BlogIndexPage() {
   const locale = await getLocale();
@@ -30,6 +31,8 @@ export async function BlogIndexPage() {
                 href={blogPostHref(featured.slug)}
                 tag={blog(`categories.${featured.category}`)}
                 date={formatBlogDate(featured.date, locale)}
+                imageSrc={blogHeroImageSrc(featured.slug)}
+                imageAlt={blog(`posts.${featured.slug}.title`)}
               />
             )}
             {rest.map((post) => (
@@ -41,6 +44,8 @@ export async function BlogIndexPage() {
                 href={blogPostHref(post.slug)}
                 tag={blog(`categories.${post.category}`)}
                 date={formatBlogDate(post.date, locale)}
+                imageSrc={blogHeroImageSrc(post.slug)}
+                imageAlt={blog(`posts.${post.slug}.title`)}
               />
             ))}
           </div>

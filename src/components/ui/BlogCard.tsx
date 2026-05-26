@@ -1,5 +1,6 @@
 import { Link } from "@/i18n/navigation";
 import { cn } from "@/lib/cn";
+import Image from "next/image";
 
 type BlogCardProps = {
   title: string;
@@ -8,6 +9,8 @@ type BlogCardProps = {
   href?: string;
   tag?: string;
   date?: string;
+  imageSrc?: string;
+  imageAlt?: string;
   className?: string;
   featured?: boolean;
 };
@@ -19,6 +22,8 @@ export function BlogCard({
   href = "/historias",
   tag,
   date,
+  imageSrc,
+  imageAlt,
   className,
   featured,
 }: BlogCardProps) {
@@ -32,12 +37,30 @@ export function BlogCard({
     >
       <div
         className={cn(
-          "shrink-0 bg-gradient-to-br from-bg-subtle to-accent-green/20",
+          "relative shrink-0 overflow-hidden bg-gradient-to-br from-bg-subtle to-accent-green/20",
           featured
             ? "aspect-[16/10] md:aspect-auto md:w-2/5"
             : "aspect-[16/10]",
         )}
-      />
+      >
+        {imageSrc && (
+          <>
+            <Image
+              src={imageSrc}
+              alt={imageAlt ?? title}
+              fill
+              sizes="(max-width: 768px) 100vw, 40vw"
+              className="object-cover"
+              quality={85}
+              priority={false}
+            />
+            <div
+              className="absolute inset-0 bg-gradient-to-br from-bg-primary/0 to-bg-primary/70"
+              aria-hidden
+            />
+          </>
+        )}
+      </div>
       <div className="flex flex-1 flex-col p-6">
         {(tag || date) && (
           <div className="mb-3 flex flex-wrap items-center gap-2">

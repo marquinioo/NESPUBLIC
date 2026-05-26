@@ -8,7 +8,7 @@ const ICONS = {
 
 export function FooterSocialLinks() {
   return (
-    <div className="mt-4 flex items-center gap-3">
+    <div className="mt-4 mb-8 flex items-center gap-3 sm:mb-10">
       {FOOTER_SOCIAL_LINKS.map((social) => {
         const Icon = ICONS[social.id];
         return (

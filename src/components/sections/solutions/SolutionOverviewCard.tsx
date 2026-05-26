@@ -2,6 +2,7 @@ import { cn } from "@/lib/cn";
 import type { SolutionId } from "@/lib/site";
 import { solutionHref } from "@/lib/site";
 import { getSolutionIcon } from "@/lib/solution-icons";
+import Image from "next/image";
 import { AnimateOnView } from "@/components/ui/AnimateOnView";
 import { Button } from "@/components/ui/Button";
 
@@ -13,6 +14,8 @@ type SolutionOverviewCardProps = {
   description: string;
   features: string[];
   learnMore: string;
+  imageSrc?: string;
+  imageAlt?: string;
 };
 
 export function SolutionOverviewCard({
@@ -23,6 +26,8 @@ export function SolutionOverviewCard({
   description,
   features,
   learnMore,
+  imageSrc,
+  imageAlt,
 }: SolutionOverviewCardProps) {
   const Icon = getSolutionIcon(icon);
   const reversed = index % 2 === 1;
@@ -38,11 +43,33 @@ export function SolutionOverviewCard({
       >
         <div
           className={cn(
-            "relative aspect-[16/9] min-h-[200px] bg-gradient-to-br from-bg-subtle to-accent-green/20 md:aspect-auto md:min-h-[280px]",
+            "relative aspect-[16/9] min-h-[200px] overflow-hidden md:aspect-auto md:min-h-[280px]",
             reversed && "md:order-2",
           )}
         >
-          <div className="absolute inset-0 flex items-center justify-center">
+          {imageSrc ? (
+            <>
+              <Image
+                src={imageSrc}
+                alt={imageAlt ?? title}
+                fill
+                sizes="(max-width: 768px) 100vw, 50vw"
+                className="object-cover"
+                quality={85}
+                priority={false}
+              />
+              <div
+                className="absolute inset-0 bg-gradient-to-br from-bg-subtle/60 to-accent-green/10"
+                aria-hidden
+              />
+            </>
+          ) : (
+            <div
+              className="absolute inset-0 bg-gradient-to-br from-bg-subtle to-accent-green/20"
+              aria-hidden
+            />
+          )}
+          <div className="absolute inset-0 flex items-center justify-center z-10">
             <Icon className="h-20 w-20 text-accent-green/40 md:h-28 md:w-28" />
           </div>
         </div>

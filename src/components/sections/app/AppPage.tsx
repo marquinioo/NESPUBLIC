@@ -6,7 +6,12 @@ import {
   Bell,
   type LucideIcon,
 } from "lucide-react";
-import { APP_FEATURES, APP_STORE_URL, GOOGLE_PLAY_URL } from "@/lib/site";
+import {
+  APP_FEATURES,
+  APP_STORE_URL,
+  GOOGLE_PLAY_URL,
+} from "@/lib/site";
+import { SITE_IMAGES } from "@/lib/site-images";
 import { Section } from "@/components/ui/Section";
 import { Container } from "@/components/ui/Container";
 import { PhoneMockup } from "@/components/ui/PhoneMockup";
@@ -65,7 +70,10 @@ export async function AppPage() {
               </div>
             </div>
             <AnimateOnView>
-              <PhoneMockup />
+              <PhoneMockup
+                imageSrc={SITE_IMAGES.app.hero}
+                imageAlt="NES Charge app preview"
+              />
             </AnimateOnView>
           </div>
         </Container>

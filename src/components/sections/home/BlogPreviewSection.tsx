@@ -4,6 +4,7 @@ import { BLOG_POSTS, blogPostHref, formatBlogDate } from "@/lib/blog";
 import { ROUTES } from "@/lib/site";
 import { Section } from "@/components/ui/Section";
 import { BlogCard } from "@/components/ui/BlogCard";
+import { blogHeroImageSrc } from "@/lib/site-images";
 
 export async function BlogPreviewSection() {
   const locale = await getLocale();
@@ -23,6 +24,8 @@ export async function BlogPreviewSection() {
             href={blogPostHref(post.slug)}
             tag={blog(`categories.${post.category}`)}
             date={formatBlogDate(post.date, locale)}
+            imageSrc={blogHeroImageSrc(post.slug)}
+            imageAlt={blog(`posts.${post.slug}.title`)}
           />
         ))}
       </div>

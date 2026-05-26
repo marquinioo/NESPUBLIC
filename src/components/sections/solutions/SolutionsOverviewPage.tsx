@@ -3,6 +3,7 @@ import {
   SOLUTIONS,
   SOLUTION_OVERVIEW_FEATURES,
 } from "@/lib/site";
+import { solutionHeroImageSrc } from "@/lib/site-images";
 import { PageHero } from "@/components/ui/PageHero";
 import { Container } from "@/components/ui/Container";
 import { SolutionOverviewCard } from "./SolutionOverviewCard";
@@ -34,6 +35,8 @@ export async function SolutionsOverviewPage() {
                 description={homeSolutions(`${solution.cardKey}.desc`)}
                 features={features}
                 learnMore={shared("learnMore")}
+                imageSrc={solutionHeroImageSrc(solution.id) ?? undefined}
+                imageAlt={menu(`${solution.menuKey}.title`)}
               />
             );
           })}

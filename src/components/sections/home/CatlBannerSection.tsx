@@ -1,5 +1,7 @@
 import { getTranslations } from "next-intl/server";
+import Image from "next/image";
 import { Section } from "@/components/ui/Section";
+import { SITE_IMAGES } from "@/lib/site-images";
 
 export async function CatlBannerSection() {
   const t = await getTranslations("home.catl");
@@ -20,9 +22,21 @@ export async function CatlBannerSection() {
           </span>
         </div>
         <div className="flex items-center justify-center rounded-2xl border border-border bg-bg-primary p-12">
-          <p className="text-center text-5xl font-extrabold tracking-tighter text-text-muted/80">
-            CATL
-          </p>
+          <div className="relative aspect-[16/10] w-full">
+            <Image
+              src={SITE_IMAGES.catl.hero}
+              alt="CATL batteries"
+              fill
+              sizes="(max-width: 768px) 80vw, 420px"
+              className="object-cover"
+              quality={90}
+              priority={false}
+            />
+            <div className="absolute inset-0 bg-bg-primary/70" aria-hidden />
+            <p className="relative z-10 text-center text-5xl font-extrabold tracking-tighter text-text-muted/80">
+              CATL
+            </p>
+          </div>
         </div>
       </div>
     </Section>

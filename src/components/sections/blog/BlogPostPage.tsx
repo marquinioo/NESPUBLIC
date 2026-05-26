@@ -1,4 +1,5 @@
 import { getTranslations, getLocale } from "next-intl/server";
+import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 import { getBlogParagraphs } from "@/lib/blog-content";
 import {
@@ -11,6 +12,7 @@ import { ROUTES } from "@/lib/site";
 import { Container } from "@/components/ui/Container";
 import { BlogCard } from "@/components/ui/BlogCard";
 import { Button } from "@/components/ui/Button";
+import { blogHeroImageSrc } from "@/lib/site-images";
 
 type BlogPostPageProps = {
   post: BlogPostMeta;
@@ -19,13 +21,26 @@ type BlogPostPageProps = {
 export async function BlogPostPage({ post }: BlogPostPageProps) {
   const locale = await getLocale();
   const blog = await getTranslations("blog");
+  const title = blog(`posts.${post.slug}.title`);
   const cta = await getTranslations("home.cta");
   const paragraphs = getBlogParagraphs(blog, post.slug);
   const related = getRelatedPosts(post.slug);
+  const heroImageSrc = blogHeroImageSrc(post.slug);
 
   return (
     <article>
-      <div className="aspect-[21/9] max-h-[420px] w-full bg-gradient-to-br from-bg-subtle via-accent-green/20 to-bg-primary" />
+      <div className="relative aspect-[21/9] max-h-[420px] w-full overflow-hidden">
+        <Image
+          src={heroImageSrc}
+          alt={title}
+          fill
+          sizes="(max-width: 768px) 100vw, 1200px"
+          className="object-cover"
+          quality={90}
+          priority={false}
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-bg-subtle via-accent-green/20 to-bg-primary" />
+      </div>
       <Container className="py-12 md:py-16">
         <div className="mx-auto max-w-3xl">
           <div className="flex flex-wrap items-center gap-3 text-sm">
@@ -38,7 +53,7 @@ export async function BlogPostPage({ post }: BlogPostPageProps) {
             <span className="text-text-muted">· {blog("author")}</span>
           </div>
           <h1 className="mt-6 text-balance text-3xl font-extrabold tracking-tight md:text-4xl lg:text-5xl">
-            {blog(`posts.${post.slug}.title`)}
+            {title}
           </h1>
           <div className="prose prose-invert mt-10 max-w-none space-y-6">
             {paragraphs.map((paragraph) => (
