@@ -4,6 +4,8 @@ export const SITE = {
   name: "NES",
   domain: "nes.uy",
   url: "https://nes.uy",
+  phone: "+598 99 750 996",
+  email: "info@nes.uy",
 } as const;
 
 export const ROUTES = {

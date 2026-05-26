@@ -1,5 +1,5 @@
 import { getTranslations } from "next-intl/server";
-import { MapPin, Globe } from "lucide-react";
+import { MapPin, Globe, Mail, Phone } from "lucide-react";
 import { SITE } from "@/lib/site";
 import { PageHero } from "@/components/ui/PageHero";
 import { Container } from "@/components/ui/Container";
@@ -35,6 +35,24 @@ export async function ContactPage() {
                 <li className="flex gap-4">
                   <MapPin className="h-5 w-5 shrink-0 text-accent-green" />
                   <span className="text-text-muted">{info("location")}</span>
+                </li>
+                <li className="flex gap-4">
+                  <Phone className="h-5 w-5 shrink-0 text-accent-green" />
+                  <a
+                    href={`tel:${SITE.phone.replace(/\s/g, "")}`}
+                    className="text-text-muted transition-colors hover:text-accent-green"
+                  >
+                    {SITE.phone}
+                  </a>
+                </li>
+                <li className="flex gap-4">
+                  <Mail className="h-5 w-5 shrink-0 text-accent-green" />
+                  <a
+                    href={`mailto:${SITE.email}`}
+                    className="text-text-muted transition-colors hover:text-accent-green"
+                  >
+                    {SITE.email}
+                  </a>
                 </li>
                 <li className="flex gap-4">
                   <Globe className="h-5 w-5 shrink-0 text-accent-green" />
