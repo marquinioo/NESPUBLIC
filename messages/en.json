@@ -491,6 +491,11 @@
       }
     }
   },
+  "images": {
+    "catlBanner": "CATL batteries",
+    "appMockup": "NES Charge app preview",
+    "mascot": "Voltio — NES mascot"
+  },
   "legal": {
     "terms": "Terms and Conditions",
     "privacy": "Privacy Policy"

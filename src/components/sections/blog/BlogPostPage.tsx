@@ -13,19 +13,20 @@ import { Container } from "@/components/ui/Container";
 import { BlogCard } from "@/components/ui/BlogCard";
 import { Button } from "@/components/ui/Button";
 import { blogHeroImageSrc } from "@/lib/site-images";
+import type { Locale } from "@/i18n/routing";
 
 type BlogPostPageProps = {
   post: BlogPostMeta;
 };
 
 export async function BlogPostPage({ post }: BlogPostPageProps) {
-  const locale = await getLocale();
+  const locale = (await getLocale()) as Locale;
   const blog = await getTranslations("blog");
   const title = blog(`posts.${post.slug}.title`);
   const cta = await getTranslations("home.cta");
   const paragraphs = getBlogParagraphs(blog, post.slug);
   const related = getRelatedPosts(post.slug);
-  const heroImageSrc = blogHeroImageSrc(post.slug);
+  const heroImageSrc = blogHeroImageSrc(locale, post.slug);
 
   return (
     <article>

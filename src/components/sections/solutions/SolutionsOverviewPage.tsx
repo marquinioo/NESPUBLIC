@@ -1,14 +1,16 @@
-import { getTranslations } from "next-intl/server";
+import { getTranslations, getLocale } from "next-intl/server";
 import {
   SOLUTIONS,
   SOLUTION_OVERVIEW_FEATURES,
 } from "@/lib/site";
 import { solutionHeroImageSrc } from "@/lib/site-images";
+import type { Locale } from "@/i18n/routing";
 import { PageHero } from "@/components/ui/PageHero";
 import { Container } from "@/components/ui/Container";
 import { SolutionOverviewCard } from "./SolutionOverviewCard";
 
 export async function SolutionsOverviewPage() {
+  const locale = (await getLocale()) as Locale;
   const hero = await getTranslations("solutions.hero");
   const menu = await getTranslations("menu");
   const homeSolutions = await getTranslations("home.solutions");
@@ -35,7 +37,7 @@ export async function SolutionsOverviewPage() {
                 description={homeSolutions(`${solution.cardKey}.desc`)}
                 features={features}
                 learnMore={shared("learnMore")}
-                imageSrc={solutionHeroImageSrc(solution.id) ?? undefined}
+                imageSrc={solutionHeroImageSrc(locale, solution.id) ?? undefined}
                 imageAlt={menu(`${solution.menuKey}.title`)}
               />
             );

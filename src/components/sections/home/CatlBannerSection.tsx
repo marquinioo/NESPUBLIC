@@ -1,10 +1,14 @@
-import { getTranslations } from "next-intl/server";
+import { getTranslations, getLocale } from "next-intl/server";
 import Image from "next/image";
+import type { Locale } from "@/i18n/routing";
 import { Section } from "@/components/ui/Section";
-import { SITE_IMAGES } from "@/lib/site-images";
+import { getSiteImages } from "@/lib/site-images";
 
 export async function CatlBannerSection() {
+  const locale = (await getLocale()) as Locale;
   const t = await getTranslations("home.catl");
+  const images = await getTranslations("images");
+  const { catl } = getSiteImages(locale);
 
   return (
     <Section className="bg-bg-surface" innerClassName="!px-0">
@@ -24,8 +28,8 @@ export async function CatlBannerSection() {
         <div className="flex items-center justify-center rounded-2xl border border-border bg-bg-primary p-12">
           <div className="relative aspect-[16/10] w-full">
             <Image
-              src={SITE_IMAGES.catl.hero}
-              alt="CATL batteries"
+              src={catl.hero}
+              alt={images("catlBanner")}
               fill
               sizes="(max-width: 768px) 80vw, 420px"
               className="object-cover"

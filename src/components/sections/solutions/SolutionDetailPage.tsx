@@ -1,10 +1,11 @@
-import { getTranslations } from "next-intl/server";
+import { getTranslations, getLocale } from "next-intl/server";
 import type { SolutionDetailId } from "@/lib/solution-pages";
 import { getSolutionIcon } from "@/lib/solution-icons";
 import { PageHero } from "@/components/ui/PageHero";
 import { SolutionDetailSections } from "./detail/SolutionDetailSections";
 import Image from "next/image";
 import { solutionHeroImageSrc } from "@/lib/site-images";
+import type { Locale } from "@/i18n/routing";
 
 type SolutionDetailPageProps = {
   solutionId: SolutionDetailId;
@@ -15,9 +16,10 @@ export async function SolutionDetailPage({
   solutionId,
   icon,
 }: SolutionDetailPageProps) {
+  const locale = (await getLocale()) as Locale;
   const t = await getTranslations(solutionId);
   const Icon = getSolutionIcon(icon);
-  const heroImageSrc = solutionHeroImageSrc(solutionId);
+  const heroImageSrc = solutionHeroImageSrc(locale, solutionId);
 
   return (
     <>

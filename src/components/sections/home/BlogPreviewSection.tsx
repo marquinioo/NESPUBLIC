@@ -5,9 +5,10 @@ import { ROUTES } from "@/lib/site";
 import { Section } from "@/components/ui/Section";
 import { BlogCard } from "@/components/ui/BlogCard";
 import { blogHeroImageSrc } from "@/lib/site-images";
+import type { Locale } from "@/i18n/routing";
 
 export async function BlogPreviewSection() {
-  const locale = await getLocale();
+  const locale = (await getLocale()) as Locale;
   const t = await getTranslations("home.blog");
   const blog = await getTranslations("blog");
   const previewPosts = BLOG_POSTS.slice(0, 3);
@@ -24,7 +25,7 @@ export async function BlogPreviewSection() {
             href={blogPostHref(post.slug)}
             tag={blog(`categories.${post.category}`)}
             date={formatBlogDate(post.date, locale)}
-            imageSrc={blogHeroImageSrc(post.slug)}
+            imageSrc={blogHeroImageSrc(locale, post.slug)}
             imageAlt={blog(`posts.${post.slug}.title`)}
           />
         ))}

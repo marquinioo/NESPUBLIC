@@ -1,4 +1,4 @@
-import { getTranslations } from "next-intl/server";
+import { getTranslations, getLocale } from "next-intl/server";
 import {
   MapPin,
   CreditCard,
@@ -11,7 +11,8 @@ import {
   APP_STORE_URL,
   GOOGLE_PLAY_URL,
 } from "@/lib/site";
-import { SITE_IMAGES } from "@/lib/site-images";
+import { getSiteImages } from "@/lib/site-images";
+import type { Locale } from "@/i18n/routing";
 import { Section } from "@/components/ui/Section";
 import { Container } from "@/components/ui/Container";
 import { PhoneMockup } from "@/components/ui/PhoneMockup";
@@ -26,10 +27,13 @@ const FEATURE_ICONS: Record<(typeof APP_FEATURES)[number], LucideIcon> = {
 };
 
 export async function AppPage() {
+  const locale = (await getLocale()) as Locale;
   const hero = await getTranslations("app.hero");
   const cta = await getTranslations("app.cta");
   const features = await getTranslations("app.features");
   const map = await getTranslations("app.map");
+  const images = await getTranslations("images");
+  const { app } = getSiteImages(locale);
 
   return (
     <>
@@ -71,8 +75,8 @@ export async function AppPage() {
             </div>
             <AnimateOnView>
               <PhoneMockup
-                imageSrc={SITE_IMAGES.app.hero}
-                imageAlt="NES Charge app preview"
+                imageSrc={app.hero}
+                imageAlt={images("appMockup")}
               />
             </AnimateOnView>
           </div>

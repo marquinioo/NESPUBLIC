@@ -7,18 +7,20 @@ import { motion, useReducedMotion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { MASCOT_LINKS } from "@/lib/site";
+import { mascotImageSrc } from "@/lib/site-images";
 import { Container } from "@/components/ui/Container";
 import { AnimateOnView } from "@/components/ui/AnimateOnView";
 
 const MASCOT_IMAGES: Record<Locale, string> = {
-  es: "/images/mascot-es.png",
-  en: "/images/mascot-en.png",
-  zh: "/images/mascot-zh.png",
+  es: mascotImageSrc("es"),
+  en: mascotImageSrc("en"),
+  zh: mascotImageSrc("zh"),
 };
 
 export function MascotGuideSection() {
   const locale = useLocale() as Locale;
   const t = useTranslations("mascot");
+  const images = useTranslations("images");
   const reduceMotion = useReducedMotion();
 
   return (
@@ -40,7 +42,7 @@ export function MascotGuideSection() {
               >
                 <Image
                   src={MASCOT_IMAGES[locale]}
-                  alt="Voltio — NES mascot"
+                  alt={images("mascot")}
                   width={1024}
                   height={1024}
                   sizes="(max-width: 768px) 360px, (max-width: 1024px) 520px, 560px"

@@ -1,85 +1,209 @@
+import type { Locale } from "@/i18n/routing";
 import type { SolutionId } from "./site";
 
-export const SITE_IMAGES = {
+type AppImages = {
+  hero: string;
+  promo: string;
+  story: string;
+  screenshot1: string;
+  screenshot2: string;
+  screenshot3: string;
+  screenshot4: string;
+};
+
+type CatlImages = {
+  hero: string;
+  osvaldo: string;
+  brand1: string;
+  brand2: string;
+  brand3: string;
+};
+
+type VehicleImages = {
+  hero: string;
+  photo2: string;
+  carousel1: string;
+  carousel2: string;
+  carousel3: string;
+  carousel4: string;
+  carousel5: string;
+};
+
+type OmnibusImages = {
+  hero: string;
+  gallery: readonly string[];
+};
+
+export type SiteImageSet = {
+  app: AppImages;
+  catl: CatlImages;
+  vehicles: VehicleImages;
+  omnibus: OmnibusImages;
+};
+
+function imagePath(locale: Locale, segment: string): string {
+  return `/images/${locale}/${segment}`;
+}
+
+const OMNIBUS_GALLERY = (locale: Locale) =>
+  Array.from({ length: 10 }, (_, index) =>
+    imagePath(locale, `omnibus/gallery-${String(index + 1).padStart(2, "0")}.jpg`),
+  ) as readonly string[];
+
+const SITE_IMAGES_ES: SiteImageSet = {
   app: {
-    hero: "/images/app/hero.jpg",
-    promo: "/images/app/promo.png",
-    story: "/images/app/story.png",
-    screenshot1: "/images/app/screenshot-1.jpg",
-    screenshot2: "/images/app/screenshot-2.jpg",
-    screenshot3: "/images/app/screenshot-3.jpg",
-    screenshot4: "/images/app/screenshot-4.jpg",
+    hero: imagePath("es", "app/hero.jpg"),
+    promo: imagePath("es", "app/promo.png"),
+    story: imagePath("es", "app/story.png"),
+    screenshot1: imagePath("es", "app/screenshot-1.jpg"),
+    screenshot2: imagePath("es", "app/screenshot-2.jpg"),
+    screenshot3: imagePath("es", "app/screenshot-3.jpg"),
+    screenshot4: imagePath("es", "app/screenshot-4.jpg"),
   },
   catl: {
-    hero: "/images/catl/hero.jpeg",
-    osvaldo: "/images/catl/osvaldo.jpeg",
-    brand1: "/images/catl/brand-01.png",
-    brand2: "/images/catl/brand-02.png",
-    brand3: "/images/catl/brand-03.png",
+    hero: imagePath("es", "catl/hero.jpeg"),
+    osvaldo: imagePath("es", "catl/osvaldo.jpeg"),
+    brand1: imagePath("es", "catl/brand-01.png"),
+    brand2: imagePath("es", "catl/brand-02.png"),
+    brand3: imagePath("es", "catl/brand-03.png"),
   },
   vehicles: {
-    hero: "/images/vehicles/photo-01.jpg",
-    photo2: "/images/vehicles/photo-02.jpg",
-    carousel1: "/images/vehicles/carousel-01.png",
-    carousel2: "/images/vehicles/carousel-02.png",
-    carousel3: "/images/vehicles/carousel-03.png",
-    carousel4: "/images/vehicles/carousel-04.png",
-    carousel5: "/images/vehicles/carousel-05.png",
+    hero: imagePath("es", "vehicles/photo-01.jpg"),
+    photo2: imagePath("es", "vehicles/photo-02.jpg"),
+    carousel1: imagePath("es", "vehicles/carousel-01.png"),
+    carousel2: imagePath("es", "vehicles/carousel-02.png"),
+    carousel3: imagePath("es", "vehicles/carousel-03.png"),
+    carousel4: imagePath("es", "vehicles/carousel-04.png"),
+    carousel5: imagePath("es", "vehicles/carousel-05.png"),
   },
   omnibus: {
-    hero: "/images/omnibus/hero.jpg",
-    gallery: [
-      "/images/omnibus/gallery-01.jpg",
-      "/images/omnibus/gallery-02.jpg",
-      "/images/omnibus/gallery-03.jpg",
-      "/images/omnibus/gallery-04.jpg",
-      "/images/omnibus/gallery-05.jpg",
-      "/images/omnibus/gallery-06.jpg",
-      "/images/omnibus/gallery-07.jpg",
-      "/images/omnibus/gallery-08.jpg",
-      "/images/omnibus/gallery-09.jpg",
-      "/images/omnibus/gallery-10.jpg",
-    ] as const,
+    hero: imagePath("es", "omnibus/hero.jpg"),
+    gallery: OMNIBUS_GALLERY("es"),
   },
-} as const;
+};
 
-export function solutionHeroImageSrc(id: SolutionId): string | null {
+/** English uses photo-led assets to avoid Spanish copy baked into marketing graphics. */
+const SITE_IMAGES_EN: SiteImageSet = {
+  app: {
+    hero: imagePath("en", "app/hero.jpg"),
+    promo: imagePath("en", "app/promo.jpg"),
+    story: imagePath("en", "app/story.jpg"),
+    screenshot1: imagePath("en", "app/screenshot-1.jpg"),
+    screenshot2: imagePath("en", "app/screenshot-2.jpg"),
+    screenshot3: imagePath("en", "app/screenshot-3.jpg"),
+    screenshot4: imagePath("en", "app/screenshot-4.jpg"),
+  },
+  catl: {
+    hero: imagePath("en", "catl/hero.jpeg"),
+    osvaldo: imagePath("en", "catl/osvaldo.jpeg"),
+    brand1: imagePath("en", "catl/brand-01.png"),
+    brand2: imagePath("en", "catl/brand-02.png"),
+    brand3: imagePath("en", "catl/brand-03.png"),
+  },
+  vehicles: {
+    hero: imagePath("en", "vehicles/photo-01.jpg"),
+    photo2: imagePath("en", "vehicles/photo-02.jpg"),
+    carousel1: imagePath("en", "vehicles/photo-01.jpg"),
+    carousel2: imagePath("en", "vehicles/photo-02.jpg"),
+    carousel3: imagePath("en", "omnibus/gallery-04.jpg"),
+    carousel4: imagePath("en", "omnibus/gallery-05.jpg"),
+    carousel5: imagePath("en", "omnibus/gallery-06.jpg"),
+  },
+  omnibus: {
+    hero: imagePath("en", "omnibus/hero.jpg"),
+    gallery: OMNIBUS_GALLERY("en"),
+  },
+};
+
+const SITE_IMAGES_ZH: SiteImageSet = {
+  app: {
+    hero: imagePath("zh", "app/hero.jpg"),
+    promo: imagePath("zh", "app/promo.jpg"),
+    story: imagePath("zh", "app/story.jpg"),
+    screenshot1: imagePath("zh", "app/screenshot-1.jpg"),
+    screenshot2: imagePath("zh", "app/screenshot-2.jpg"),
+    screenshot3: imagePath("zh", "app/screenshot-3.jpg"),
+    screenshot4: imagePath("zh", "app/screenshot-4.jpg"),
+  },
+  catl: {
+    hero: imagePath("zh", "catl/hero.jpeg"),
+    osvaldo: imagePath("zh", "catl/osvaldo.jpeg"),
+    brand1: imagePath("zh", "catl/brand-01.png"),
+    brand2: imagePath("zh", "catl/brand-02.png"),
+    brand3: imagePath("zh", "catl/brand-03.png"),
+  },
+  vehicles: {
+    hero: imagePath("zh", "vehicles/photo-01.jpg"),
+    photo2: imagePath("zh", "vehicles/photo-02.jpg"),
+    carousel1: imagePath("zh", "vehicles/photo-01.jpg"),
+    carousel2: imagePath("zh", "vehicles/photo-02.jpg"),
+    carousel3: imagePath("zh", "omnibus/gallery-04.jpg"),
+    carousel4: imagePath("zh", "omnibus/gallery-05.jpg"),
+    carousel5: imagePath("zh", "omnibus/gallery-06.jpg"),
+  },
+  omnibus: {
+    hero: imagePath("zh", "omnibus/hero.jpg"),
+    gallery: OMNIBUS_GALLERY("zh"),
+  },
+};
+
+const SITE_IMAGES_BY_LOCALE: Record<Locale, SiteImageSet> = {
+  es: SITE_IMAGES_ES,
+  en: SITE_IMAGES_EN,
+  zh: SITE_IMAGES_ZH,
+};
+
+export function getSiteImages(locale: Locale): SiteImageSet {
+  return SITE_IMAGES_BY_LOCALE[locale] ?? SITE_IMAGES_ES;
+}
+
+export function mascotImageSrc(locale: Locale): string {
+  return `/images/mascot-${locale}.png`;
+}
+
+export function solutionHeroImageSrc(
+  locale: Locale,
+  id: SolutionId,
+): string | null {
+  const images = getSiteImages(locale);
+
   switch (id) {
     case "catl":
-      return SITE_IMAGES.catl.hero;
+      return images.catl.hero;
     case "vehicles":
-      return SITE_IMAGES.vehicles.hero;
+      return images.vehicles.hero;
     case "charging":
-      return SITE_IMAGES.vehicles.carousel2;
+      return images.vehicles.carousel2;
     case "bess":
-      return SITE_IMAGES.catl.brand2;
+      return images.catl.brand2;
     case "iot":
-      return SITE_IMAGES.vehicles.carousel4;
+      return images.vehicles.carousel4;
     case "app":
-      return SITE_IMAGES.app.hero;
+      return images.app.hero;
     default:
       return null;
   }
 }
 
-export function blogHeroImageSrc(slug: string): string {
+export function blogHeroImageSrc(locale: Locale, slug: string): string {
+  const images = getSiteImages(locale);
+
   switch (slug) {
     case "omnibus-electrico-buquebus-uruguay":
-      return SITE_IMAGES.omnibus.hero;
+      return images.omnibus.hero;
     case "recambio-baterias-buses-montevideo":
-      return SITE_IMAGES.catl.osvaldo;
+      return images.catl.osvaldo;
     case "alianza-estrategica-catl":
-      return SITE_IMAGES.catl.brand1;
+      return images.catl.brand1;
     case "flota-camiones-electricos-uruguay":
-      return SITE_IMAGES.vehicles.photo2;
+      return images.vehicles.photo2;
     case "sistema-bess-industrial":
-      return SITE_IMAGES.catl.brand3;
+      return images.catl.brand3;
     case "lanzamiento-app-nes-charge":
-      return SITE_IMAGES.app.story;
+      return images.app.story;
     case "nes-movilidad-electrica-prensa":
-      return SITE_IMAGES.omnibus.gallery[4] ?? SITE_IMAGES.omnibus.hero;
+      return images.omnibus.gallery[4] ?? images.omnibus.hero;
     default:
-      return SITE_IMAGES.omnibus.hero;
+      return images.omnibus.hero;
   }
 }
-

@@ -1,11 +1,13 @@
-import { getTranslations } from "next-intl/server";
+import { getTranslations, getLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { SOLUTIONS, ROUTES, solutionHref } from "@/lib/site";
 import { solutionHeroImageSrc } from "@/lib/site-images";
+import type { Locale } from "@/i18n/routing";
 import { Section } from "@/components/ui/Section";
 import { SolutionCard } from "@/components/ui/SolutionCard";
 
 export async function SolutionsSection() {
+  const locale = (await getLocale()) as Locale;
   const t = await getTranslations("home.solutions");
   const shared = await getTranslations("shared");
 
@@ -25,7 +27,7 @@ export async function SolutionsSection() {
             description={t(`${item.cardKey}.desc`)}
             href={solutionHref(item.id)}
             learnMore={shared("learnMore")}
-            imageSrc={solutionHeroImageSrc(item.id) ?? undefined}
+            imageSrc={solutionHeroImageSrc(locale, item.id) ?? undefined}
             imageAlt={t(`${item.cardKey}.title`)}
           />
         ))}
